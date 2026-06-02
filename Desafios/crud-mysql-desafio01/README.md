@@ -1,64 +1,79 @@
 # 🚀 Products CRUD API
 
+![Node.js](https://img.shields.io/badge/Node.js-22-green)
+![Express](https://img.shields.io/badge/Express-5-blue)
+![MySQL](https://img.shields.io/badge/MySQL-8-orange)
+![Zod](https://img.shields.io/badge/Zod-Validation-purple)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
 A complete CRUD API built with **Node.js**, **Express**, **MySQL**, and **Zod**, developed as part of the **Nova Era Tech Backend JS Challenge #01**.
 
 This project demonstrates a real-world backend architecture with layered organization, data validation, error handling, cloud database integration, and a frontend dashboard for product management.
 
 ---
 
-## 📸 Project Preview
+# 🌟 Overview
 
-### 🖥️ Frontend Dashboard
+This project was developed as part of the Nova Era Tech Backend JS Formation.
 
-![Frontend Dashboard](./image/front.png)
+The goal was to build a complete CRUD API using a SQL database, following a layered architecture and industry best practices.
 
-### ➕ Create Product
-
-![Create Product](./image/post.png)
-
-### 🔍 Get Product By ID
-
-![Get Product](./image/get.png)
-
-### ✏️ Update Product
-
-![Update Product](./image/put.png)
-
-### 🗑️ Delete Product
-
-![Delete Product](./image/delet.png)
-
-### ❌ Error Handling
-
-![Error Handling](./image/erro.png)
+To go beyond the challenge requirements, a frontend dashboard was also developed, allowing product management through a modern user interface connected directly to the API.
 
 ---
 
-## 🛠️ Technologies
+# 📸 Project Preview
 
-### Backend
+## 🖥️ Frontend Dashboard
 
-- Node.js
-- Express.js
-- MySQL
-- mysql2
-- Zod
-- Dotenv
-- CORS
+![Frontend Dashboard](./backend/src/image/front.png)
 
-### Database
+## ➕ Create Product
 
-- Aiven MySQL Cloud Database
+![Create Product](./backend/src/image/post.png)
 
-### Frontend
+## 🔍 Get Product By ID
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
+![Get Product](./backend/src/image/get.png)
+
+## ✏️ Update Product
+
+![Update Product](./backend/src/image/put.png)
+## 🗑️ Delete Product
+
+![Delete Product](./backend/src/image/delet.png)
+
+## ❌ Error Handling
+
+![Error Handling](./backend/src/image/erro.png)
 
 ---
 
-## 📂 Project Structure
+# 🛠️ Technologies
+
+## Backend
+
+* Node.js
+* Express.js
+* MySQL
+* mysql2
+* Zod
+* Dotenv
+* CORS
+
+## Database
+
+* Aiven MySQL Cloud Database
+
+## Frontend
+
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+
+---
+
+# 📂 Project Structure
 
 ```txt
 crud-mysql-desafio01/
@@ -100,15 +115,15 @@ crud-mysql-desafio01/
 │   ├── delet.png
 │   └── erro.png
 │
-├── .env
 ├── .gitignore
 ├── package.json
+├── package-lock.json
 └── README.md
 ```
 
 ---
 
-## ⚙️ Environment Variables
+# ⚙️ Environment Variables
 
 Create a `.env` file:
 
@@ -124,12 +139,12 @@ DB_NAME=your-database
 
 ---
 
-## 📦 Installation
+# 📦 Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/crud-mysql-desafio01.git
+git clone https://github.com/Vitor2209/crud-mysql-desafio01.git
 ```
 
 Navigate to the project:
@@ -152,7 +167,7 @@ npm run dev
 
 ---
 
-## 🗄️ Database
+# 🗄️ Database
 
 Create the products table:
 
@@ -168,33 +183,61 @@ CREATE TABLE IF NOT EXISTS products (
 
 ---
 
-## 📌 API Endpoints
+# 📌 API Endpoints
 
-### Create Product
+## Create Product
 
 ```http
 POST /products
 ```
 
-### Get All Products
+Body:
+
+```json
+{
+  "name": "Notebook Dell",
+  "price": 3500.99,
+  "stock": 10
+}
+```
+
+---
+
+## Get All Products
 
 ```http
 GET /products
 ```
 
-### Get Product By ID
+---
+
+## Get Product By ID
 
 ```http
 GET /products/:id
 ```
 
-### Update Product
+---
+
+## Update Product
 
 ```http
 PUT /products/:id
 ```
 
-### Delete Product
+Body:
+
+```json
+{
+  "name": "Notebook Dell Updated",
+  "price": 4200.50,
+  "stock": 5
+}
+```
+
+---
+
+## Delete Product
 
 ```http
 DELETE /products/:id
@@ -202,49 +245,81 @@ DELETE /products/:id
 
 ---
 
-## ✅ Features
+# ✅ Features
 
-- Create products
-- List products
-- Search products by ID
-- Update products
-- Delete products
-- Input validation with Zod
-- Error handling
-- MySQL cloud database
-- Frontend dashboard
-- RESTful architecture
-
----
-
-## 🎯 Challenge Goals Achieved
-
-- ✅ Node.js API
-- ✅ Express Routes
-- ✅ MySQL Integration
-- ✅ CRUD Operations
-- ✅ Layered Architecture
-- ✅ Input Validation
-- ✅ Environment Variables
-- ✅ Error Handling
-- ✅ HTTP Status Codes
-- ✅ Frontend Integration
+* Create products
+* List products
+* Search products by ID
+* Update products
+* Delete products
+* Input validation with Zod
+* Error handling
+* MySQL cloud database
+* Frontend dashboard
+* RESTful architecture
+* Layered architecture
+* Cloud database integration
 
 ---
 
-## 👨‍💻 Author
+# 🎯 Challenge Goals Achieved
+
+* ✅ Node.js API
+* ✅ Express Routes
+* ✅ MySQL Integration
+* ✅ CRUD Operations
+* ✅ Layered Architecture
+* ✅ Input Validation
+* ✅ Environment Variables
+* ✅ Error Handling
+* ✅ HTTP Status Codes
+* ✅ Frontend Integration
+* ✅ Cloud Database Connection
+
+---
+
+# 🚀 Future Improvements
+
+* Pagination
+* Product search by name
+* Product sorting by price
+* Swagger Documentation
+* JWT Authentication
+* Docker Containerization
+* Unit Tests with Jest
+* Deployment on Render
+* CI/CD Pipeline
+* Role-Based Access Control
+
+---
+
+# 👨‍💻 Author
 
 **Vitor Dutra Melo**
 
-- GitHub: https://github.com/Vitor2209
-- LinkedIn: https://www.linkedin.com/in/vitordutramelo
+Backend Developer
+
+GitHub:
+https://github.com/Vitor2209
+
+LinkedIn:
+https://www.linkedin.com/in/vitordutramelo
+
+Instagram:
+https://instagram.com/vitormelodev
 
 ---
 
-## 🏆 Nova Era Tech
+# 🏆 Nova Era Tech
 
 Backend JS Formation
 
-**Challenge 01 — CRUD with MySQL**
+### Challenge 01 — CRUD with MySQL
 
-✔ Completed Successfully
+✔ Successfully Completed
+
+**XP Earned:** +500 XP
+
+---
+
+Made with ❤️ using Node.js, Express, MySQL and JavaScript.

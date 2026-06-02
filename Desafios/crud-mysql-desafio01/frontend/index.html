@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products CRUD Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">⬡</div>
+      <div>
+        <h1>Products CRUD</h1>
+        <p>MySQL • Node.js • Express</p>
+      </div>
+    </div>
+
+    <nav>
+      <a class="active">⌂ Dashboard</a>
+      <a>⬡ Products</a>
+      <a>▥ Statistics</a>
+      <a>ⓘ About</a>
+    </nav>
+
+    <div class="api-card">
+      <strong>🟢 API Status</strong>
+      <span>Connected</span>
+      <small>v1.0.0</small>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header>
+      <div>
+        <h2>Dashboard</h2>
+        <p>Manage your products</p>
+      </div>
+      <div class="status">🟢 API Connected</div>
+    </header>
+
+    <section class="card">
+      <h3>＋ Add New Product</h3>
+
+      <form id="productForm">
+        <input type="hidden" id="productId" />
+
+        <div class="form-group">
+          <label>Name</label>
+          <input id="name" type="text" placeholder="Enter product name" required />
+        </div>
+
+        <div class="form-group">
+          <label>Price</label>
+          <input id="price" type="number" step="0.01" placeholder="Enter price" required />
+        </div>
+
+        <div class="form-group">
+          <label>Stock</label>
+          <input id="stock" type="number" placeholder="Enter stock" required />
+        </div>
+
+        <button type="submit" id="submitBtn">＋ Add Product</button>
+      </form>
+    </section>
+
+    <section class="card table-card">
+      <div class="table-header">
+        <h3>⬡ Products List</h3>
+
+        <div class="search-box">
+          <input id="searchInput" type="text" placeholder="Search products..." />
+          <button onclick="loadProducts()">↻</button>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Created At</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="productsTable"></tbody>
+      </table>
+
+      <p id="countText" class="count"></p>
+    </section>
+
+    <footer>
+      Built with ❤️ using <span>Node.js</span>, <span>Express</span> and <span>MySQL</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

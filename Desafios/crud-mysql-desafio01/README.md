@@ -1,70 +1,141 @@
 # 🚀 Products CRUD API
 
-A RESTful API developed with **Node.js**, **Express**, **MySQL**, and **Zod** for managing products.
+A complete CRUD API built with **Node.js**, **Express**, **MySQL**, and **Zod**, developed as part of the **Nova Era Tech Backend JS Challenge #01**.
 
-This project was created as part of the **Backend JS Formation Challenge**, focusing on API development, database persistence, validation, and clean architecture.
-
----
-
-# 📋 Features
-
-* Create products
-* List all products
-* Get product by ID
-* Update products
-* Delete products
-* Data validation with Zod
-* MySQL persistence
-* Environment variables support
-* Layered architecture
+This project demonstrates a real-world backend architecture with layered organization, data validation, error handling, cloud database integration, and a frontend dashboard for product management.
 
 ---
 
-# 🛠 Technologies
+## 📸 Project Preview
 
-* Node.js
-* Express.js
-* MySQL
-* Zod
-* Dotenv
-* Nodemon
+### 🖥️ Frontend Dashboard
+
+![Frontend Dashboard](./image/front.png)
+
+### ➕ Create Product
+
+![Create Product](./image/post.png)
+
+### 🔍 Get Product By ID
+
+![Get Product](./image/get.png)
+
+### ✏️ Update Product
+
+![Update Product](./image/put.png)
+
+### 🗑️ Delete Product
+
+![Delete Product](./image/delet.png)
+
+### ❌ Error Handling
+
+![Error Handling](./image/erro.png)
 
 ---
 
-# 📁 Project Structure
+## 🛠️ Technologies
 
-```text
-src/
-├── config/
-│   └── database.js
-├── controllers/
-│   └── productController.js
-├── repositories/
-│   └── productRepository.js
-├── routes/
-│   └── productRoutes.js
-├── schemas/
-│   └── productSchema.js
-├── services/
-│   └── productService.js
-└── server.js
+### Backend
 
-sql/
-└── init.sql
+- Node.js
+- Express.js
+- MySQL
+- mysql2
+- Zod
+- Dotenv
+- CORS
+
+### Database
+
+- Aiven MySQL Cloud Database
+
+### Frontend
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+
+---
+
+## 📂 Project Structure
+
+```txt
+crud-mysql-desafio01/
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── src/
+│   ├── config/
+│   │   └── database.js
+│   │
+│   ├── controllers/
+│   │   └── productController.js
+│   │
+│   ├── repositories/
+│   │   └── productRepository.js
+│   │
+│   ├── routes/
+│   │   └── productRoutes.js
+│   │
+│   ├── schemas/
+│   │   └── productSchema.js
+│   │
+│   ├── services/
+│   │   └── productService.js
+│   │
+│   └── server.js
+│
+├── sql/
+│   └── create-products-table.sql
+│
+├── image/
+│   ├── front.png
+│   ├── post.png
+│   ├── get.png
+│   ├── put.png
+│   ├── delet.png
+│   └── erro.png
+│
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
 ```
 
-# ⚙️ Installation
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file:
+
+```env
+PORT=3000
+
+DB_HOST=your-host
+DB_PORT=your-port
+DB_USER=your-user
+DB_PASSWORD=your-password
+DB_NAME=your-database
+```
+
+---
+
+## 📦 Installation
 
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/YOUR_USERNAME/crud-mysql-desafio01.git
 ```
 
 Navigate to the project:
 
 ```bash
-cd products-crud-api
+cd crud-mysql-desafio01
 ```
 
 Install dependencies:
@@ -73,29 +144,19 @@ Install dependencies:
 npm install
 ```
 
-# 🔐 Environment Variables
+Start the server:
 
-Create a `.env` file in the root directory:
-
-```env
-PORT=3000
-
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=products_db
+```bash
+npm run dev
 ```
 
-# 🗄 Database Setup
+---
 
-Execute the SQL script:
+## 🗄️ Database
+
+Create the products table:
 
 ```sql
-CREATE DATABASE IF NOT EXISTS products_db;
-
-USE products_db;
-
 CREATE TABLE IF NOT EXISTS products (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -105,104 +166,85 @@ CREATE TABLE IF NOT EXISTS products (
 );
 ```
 
-# ▶ Running the Project
-
-Development mode:
-
-```bash
-npm run dev
-```
-
-Production mode:
-
-```bash
-npm start
-```
-
-# 📌 API Endpoints
-
-## Create Product
-
-POST `/products`
-
-Request Body:
-
-```json
-{
-  "name": "Notebook Dell",
-  "price": 3500.99,
-  "stock": 10
-}
-```
-
 ---
 
-## Get All Products
+## 📌 API Endpoints
 
-GET `/products`
-
----
-
-## Get Product By ID
-
-GET `/products/:id`
-
-Example:
+### Create Product
 
 ```http
-GET /products/1
+POST /products
 ```
 
----
-
-## Update Product
-
-PUT `/products/:id`
-
-Request Body:
-
-```json
-{
-  "name": "Notebook Dell Updated",
-  "price": 4000,
-  "stock": 5
-}
-```
-
----
-
-## Delete Product
-
-DELETE `/products/:id`
-
-Example:
+### Get All Products
 
 ```http
-DELETE /products/1
+GET /products
 ```
 
-# ✅ Validation Rules
+### Get Product By ID
 
-| Field | Rule                                          |
-| ----- | --------------------------------------------- |
-| name  | Required                                      |
-| price | Must be greater than 0                        |
-| stock | Must be an integer greater than or equal to 0 |
+```http
+GET /products/:id
+```
 
-# 📚 Learning Objectives
+### Update Product
 
-This project demonstrates:
+```http
+PUT /products/:id
+```
 
-* REST API development
-* CRUD operations
-* SQL database integration
-* Data validation
-* Layered architecture
-* Error handling
-* Environment configuration
+### Delete Product
 
-# 👨‍💻 Author
+```http
+DELETE /products/:id
+```
 
-Vitor Dutra Melo
+---
 
-Backend Developer | Node.js | Express | PostgreSQL | MySQL
+## ✅ Features
+
+- Create products
+- List products
+- Search products by ID
+- Update products
+- Delete products
+- Input validation with Zod
+- Error handling
+- MySQL cloud database
+- Frontend dashboard
+- RESTful architecture
+
+---
+
+## 🎯 Challenge Goals Achieved
+
+- ✅ Node.js API
+- ✅ Express Routes
+- ✅ MySQL Integration
+- ✅ CRUD Operations
+- ✅ Layered Architecture
+- ✅ Input Validation
+- ✅ Environment Variables
+- ✅ Error Handling
+- ✅ HTTP Status Codes
+- ✅ Frontend Integration
+
+---
+
+## 👨‍💻 Author
+
+**Vitor Dutra Melo**
+
+- GitHub: https://github.com/Vitor2209
+- LinkedIn: https://www.linkedin.com/in/vitordutramelo
+
+---
+
+## 🏆 Nova Era Tech
+
+Backend JS Formation
+
+**Challenge 01 — CRUD with MySQL**
+
+✔ Completed Successfully

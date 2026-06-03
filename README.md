@@ -65,11 +65,8 @@ Practical introduction to NoSQL databases using collections and documents.
 * CRUD Operations
 * NoSQL Fundamentals
 
-<<<<<<< HEAD
-**Status:** ✅ Completed
 =======
-**Status:** 🚧 In Progress
->>>>>>> 25f6c1d74d03b4d9d8836910b3ab47b2caec54f9
+**Status:** ✅ Completed
 
 ---
 

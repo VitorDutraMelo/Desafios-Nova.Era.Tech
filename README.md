@@ -65,7 +65,11 @@ Practical introduction to NoSQL databases using collections and documents.
 * CRUD Operations
 * NoSQL Fundamentals
 
+<<<<<<< HEAD
 **Status:** ✅ Completed
+=======
+**Status:** 🚧 In Progress
+>>>>>>> 25f6c1d74d03b4d9d8836910b3ab47b2caec54f9
 
 ---
 
@@ -298,8 +302,8 @@ Capstone project showcasing everything learned throughout the formation.
 
 | Challenge                       | Status         |
 | ------------------------------- | -------------- |
-| 01 - CRUD with MySQL            | 🚧 In Progress |
-| 02 - Basic MongoDB              | ⏳ Planned      |
+| 01 - CRUD with MySQL            | ✅ Completed    |
+| 02 - Basic MongoDB              | 🚧 In Progress |
 | 03 - API with NestJS            | ⏳ Planned      |
 | 04 - Docker Fundamentals        | ⏳ Planned      |
 | 05 - Testing with Jest          | ⏳ Planned      |
@@ -337,7 +341,8 @@ Complete all 15 challenges and build a strong backend portfolio demonstrating pr
 [www.linkedin.com/in/vitordutramelo](http://www.linkedin.com/in/vitordutramelo)
 
 **GitHub:**
-https://github.com/Vitor2209
+https://github.com/VitorDutraMelo
 
 **Instagram:**
 https://instagram.com/vitormelodev
+

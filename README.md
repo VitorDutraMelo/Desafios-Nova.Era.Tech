@@ -47,7 +47,7 @@ First Backend JS challenge focused on essential SQL database operations.
 * SQL Queries
 * Zod Validation
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Completed
 
 ---
 
@@ -65,7 +65,7 @@ Practical introduction to NoSQL databases using collections and documents.
 * CRUD Operations
 * NoSQL Fundamentals
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -83,7 +83,7 @@ Building a structured API using modular architecture and RESTful routes.
 * Modules
 * Dependency Injection
 
-**Status:** ⏳ Planned
+**Status:** 🚧 In Progress
 
 ---
 

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager | MongoDB Challenge</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">✓</div>
+      <div>
+        <h1>Task Manager</h1>
+        <p>MongoDB Challenge</p>
+      </div>
+    </div>
+
+    <nav>
+      <a class="active">📋 Tasks</a>
+      <a>ⓘ About</a>
+    </nav>
+
+    <div class="challenge">
+      <span>⚡</span>
+      <div>
+        <strong>Desafio 02</strong>
+        <p>MongoDB Básico</p>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="header">
+      <div>
+        <h2>📋 My Tasks</h2>
+        <p>Create, organize and track your tasks</p>
+      </div>
+
+      <div class="connection-card">
+        <span>🗄️</span>
+        <div>
+          <strong>MongoDB Atlas</strong>
+          <p>Connected</p>
+        </div>
+        <small></small>
+      </div>
+    </header>
+
+    <section class="card">
+      <h3>➕ Create New Task</h3>
+
+      <form id="taskForm" class="form">
+        <div class="field">
+          <label>Title *</label>
+          <input id="title" type="text" placeholder="Enter task title" required />
+        </div>
+
+        <div class="field">
+          <label>Description</label>
+          <input id="description" type="text" placeholder="Enter task description" />
+        </div>
+
+        <div class="field">
+          <label>Tags</label>
+          <input id="tags" type="text" placeholder="e.g. mongodb, backend, study" />
+        </div>
+
+        <div class="field">
+          <label>Status</label>
+          <select id="status">
+            <option value="pending">pending</option>
+            <option value="in_progress">in_progress</option>
+            <option value="done">done</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn create">＋ Create Task</button>
+      </form>
+    </section>
+
+    <section class="filters">
+      <div>
+        <label>Filter by status:</label>
+        <select id="filterStatus">
+          <option value="">All Status</option>
+          <option value="pending">pending</option>
+          <option value="in_progress">in_progress</option>
+          <option value="done">done</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Filter by tag:</label>
+        <input id="filterTag" type="text" placeholder="Enter tag" />
+      </div>
+
+      <div>
+        <label>Search:</label>
+        <input id="search" type="text" placeholder="Search by title..." />
+      </div>
+
+      <button id="clearFilters" class="btn clear">✕ Clear Filters</button>
+    </section>
+
+    <section class="tasks-card">
+      <h3>▣ Tasks (<span id="taskCount">0</span>)</h3>
+      <div id="tasksList"></div>
+    </section>
+
+    <footer>
+      Made with 💚 by Vitor Melo • Desafios Nova Era
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

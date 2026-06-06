@@ -1,0 +1,21 @@
+{
+  "name": "desafio-05-testes-jest",
+  "version": "1.0.0",
+  "description": "Desafio 05 - Testes unitários com Jest",
+  "main": "src/services/productService.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "nodejs",
+    "jest",
+    "unit-tests",
+    "backend"
+  ],
+  "author": "Vitor Dutra Melo",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}

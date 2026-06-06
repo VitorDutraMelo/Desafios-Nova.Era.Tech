@@ -1,12 +1,32 @@
 # 🚀 Desafio 04 — Docker Básico
 
-Uma API desenvolvida com **Node.js** e **Express**, preparada para ser executada dentro de um container Docker, garantindo portabilidade, previsibilidade e facilidade de implantação em qualquer ambiente.
+Uma API desenvolvida com **Node.js** e **Express** totalmente containerizada com **Docker**, permitindo execução consistente em qualquer ambiente.
 
 ---
 
-## 🎯 Objetivo do Desafio
+## 📸 Demonstração
 
-Containerizar uma aplicação backend Node.js utilizando Docker, criando uma imagem reproduzível e executando a API dentro de um container.
+### 🐳 Docker Build
+
+![Docker Build](./image/docker-build.png)
+
+---
+
+### 🚀 Container em Execução
+
+![Docker Container](./image/docker-ps.png)
+
+---
+
+### 🌐 API Rodando no Container
+
+![API Running](./image/api.png)
+
+---
+
+## 🎯 Objetivo
+
+Containerizar uma aplicação Node.js utilizando Docker, criando uma imagem reproduzível e executando a API dentro de um container.
 
 ---
 
@@ -17,7 +37,6 @@ Containerizar uma aplicação backend Node.js utilizando Docker, criando uma ima
 * Docker
 * Dockerfile
 * Variáveis de Ambiente
-* REST API
 
 ---
 
@@ -25,6 +44,11 @@ Containerizar uma aplicação backend Node.js utilizando Docker, criando uma ima
 
 ```txt
 desafio-04-docker-basico/
+│
+├── image/
+│   ├── api.png
+│   ├── docker-ps.png
+│   └── Screenshot.png
 │
 ├── src/
 │   ├── app.js
@@ -39,40 +63,46 @@ desafio-04-docker-basico/
 
 ---
 
-## 📦 Instalação
+## ▶️ Executar Localmente
 
-Clone o repositório:
-
-```bash
-git clone https://github.com/seu-usuario/desafio-04-docker-basico.git
-```
-
-Entre na pasta:
-
-```bash
-cd desafio-04-docker-basico
-```
-
-Instale as dependências:
+Instalar dependências:
 
 ```bash
 npm install
 ```
 
----
-
-## ▶️ Executando Localmente
-
-Inicie o servidor:
+Executar aplicação:
 
 ```bash
 npm run dev
 ```
 
-Servidor disponível em:
+Servidor:
 
 ```txt
 http://localhost:3000
+```
+
+---
+
+## 🐳 Docker
+
+### Build da imagem
+
+```bash
+docker build -t desafio-04-api-docker .
+```
+
+### Executar container
+
+```bash
+docker run -p 3000:3000 desafio-04-api-docker
+```
+
+### Verificar container
+
+```bash
+docker ps
 ```
 
 ---
@@ -103,16 +133,6 @@ Resposta:
 GET /health
 ```
 
-Resposta:
-
-```json
-{
-  "status": "ok",
-  "uptime": 12.34,
-  "timestamp": "2026-06-06T00:00:00.000Z"
-}
-```
-
 ---
 
 ### Users
@@ -121,88 +141,35 @@ Resposta:
 GET /users
 ```
 
-Resposta:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Vitor Dutra",
-    "role": "Backend Developer"
-  },
-  {
-    "id": 2,
-    "name": "Nova Era Tech",
-    "role": "Challenge Platform"
-  }
-]
-```
-
----
-
-## 🐳 Docker
-
-### Build da imagem
-
-```bash
-docker build -t desafio-04-api-docker .
-```
-
-### Executar container
-
-```bash
-docker run -p 3000:3000 desafio-04-api-docker
-```
-
-### Verificar containers ativos
-
-```bash
-docker ps
-```
-
----
-
-## 🛠️ Funcionalidades
-
-* API REST com Express
-* Health Check da aplicação
-* Estrutura organizada em camadas simples
-* Variáveis de ambiente
-* Dockerfile configurado
-* Pronta para containerização
-* Fácil deploy em qualquer ambiente
-
 ---
 
 ## ✅ Critérios Atendidos
 
 * Dockerfile criado
-* Porta da aplicação exposta
-* Estrutura pronta para execução em container
-* Uso de imagem oficial do Node.js
-* Instalação eficiente das dependências
+* Imagem Docker gerada
+* Container executado com sucesso
+* Porta 3000 exposta
+* API acessível externamente
 * Variáveis de ambiente configuradas
-* API acessível através dos endpoints
+* Build reproduzível em qualquer ambiente
 
 ---
 
-## 📚 Aprendizados
+## 📚 Conceitos Praticados
 
-Durante este desafio foram praticados conceitos importantes de Docker:
-
-* Criação de imagens
-* Containers
+* Docker
 * Dockerfile
+* Containers
+* Imagens Docker
 * Port Mapping
-* Variáveis de ambiente
-* Isolamento de aplicações
-* Reprodutibilidade de ambientes
+* Variáveis de Ambiente
+* Containerização de APIs Node.js
 
 ---
 
-## 🚀 Próximo Passo
+## 🏁 Resultado
 
-O próximo desafio será focado em **testes automatizados com Jest**, garantindo maior qualidade e confiabilidade para a aplicação.
+A aplicação foi containerizada com sucesso e executada dentro de um container Docker, demonstrando os conceitos fundamentais de Docker para aplicações backend.
 
 ---
 
@@ -212,4 +179,4 @@ O próximo desafio será focado em **testes automatizados com Jest**, garantindo
 
 Backend Developer | Node.js | Express | PostgreSQL | Prisma ORM
 
-Projeto desenvolvido como parte da trilha de desafios da **Nova Era Tech**.
+Projeto desenvolvido para a trilha de desafios da **Nova Era Tech**.

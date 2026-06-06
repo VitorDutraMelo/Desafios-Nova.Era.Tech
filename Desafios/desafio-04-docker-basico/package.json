@@ -1,0 +1,22 @@
+{
+  "name": "desafio-04-docker-basico",
+  "version": "1.0.0",
+  "description": "Desafio 04 - Docker básico com Node.js e Express",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "docker",
+    "api"
+  ],
+  "author": "Vitor Dutra Melo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5"
+  }
+}

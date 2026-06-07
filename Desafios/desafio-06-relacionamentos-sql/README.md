@@ -4,25 +4,58 @@ A complete REST API built with **Node.js**, **Express**, **MySQL**, and **Zod**,
 
 This project demonstrates real-world relational database modeling using:
 
-* One-to-Many relationships
+* One-to-Many Relationships
 * Foreign Keys
 * SQL JOINs
-* Business rules validation
-* Order management
+* Referential Integrity
+* Transactions
+* Business Rules Validation
 * Pagination
-* Data integrity
+* Order Management
 
 ---
 
 # 📸 Project Preview
 
-## 🖥️ Application Running
+## 🚀 Server Running
 
-![Application Running](./images/project-running.jpg)
+![Server Running](./images/terminal.png)
+
+---
+
+## 👤 Create Customer
+
+![Create Customer](./images/create.png)
+
+---
+
+## 📦 List Products
+
+![List Products](./images/listar-produtos.png)
+
+---
+
+## 🛒 Create Order
+
+![Create Order](./images/criar-pedido.png)
+
+---
+
+## 🔍 Get Order By ID
+
+![Get Order By ID](./images/buscar-pedido.png)
+
+---
+
+## ❌ Cancel Order
+
+![Cancel Order](./images/cacelar-pedido.png)
 
 ---
 
 # 🛠️ Technologies
+
+### Backend
 
 * Node.js
 * Express.js
@@ -35,45 +68,108 @@ This project demonstrates real-world relational database modeling using:
 
 ---
 
-# 📦 Database Structure
+# 📂 Project Structure
+
+```bash
+desafio-06-relacionamentos-sql/
+
+├── database/
+│   ├── schema.sql
+│   └── seed.sql
+│
+├── images/
+│   ├── buscar-pedido.png
+│   ├── cacelar-pedido.png
+│   ├── create.png
+│   ├── criar-pedido.png
+│   ├── listar-produtos.png
+│   └── terminal.png
+│
+├── src/
+│
+│   ├── config/
+│   │   └── database.js
+│
+│   ├── controllers/
+│   │   ├── customerController.js
+│   │   ├── productController.js
+│   │   └── orderController.js
+│
+│   ├── middlewares/
+│   │   ├── errorHandler.js
+│   │   └── notFound.js
+│
+│   ├── repositories/
+│   │   ├── customerRepository.js
+│   │   ├── productRepository.js
+│   │   └── orderRepository.js
+│
+│   ├── routes/
+│   │   ├── customerRoutes.js
+│   │   ├── productRoutes.js
+│   │   └── orderRoutes.js
+│
+│   ├── services/
+│   │   ├── customerService.js
+│   │   ├── productService.js
+│   │   └── orderService.js
+│
+│   ├── validations/
+│   │   ├── customerValidation.js
+│   │   ├── productValidation.js
+│   │   └── orderValidation.js
+│
+│   ├── app.js
+│   ├── server.js
+│   └── setupDatabase.js
+│
+├── .env.example
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+---
+
+# 🗄️ Database Model
 
 ## Customers
+
+Stores customer information.
 
 ```sql
 d06_customers
 ```
 
-Stores customer information.
-
 ---
 
 ## Products
+
+Stores products and stock quantity.
 
 ```sql
 d06_products
 ```
 
-Stores available products and stock quantity.
-
 ---
 
 ## Orders
+
+Stores customer orders.
 
 ```sql
 d06_orders
 ```
 
-Stores customer orders.
-
 ---
 
 ## Order Items
 
+Stores products associated with orders.
+
 ```sql
 d06_order_items
 ```
-
-Stores products linked to orders.
 
 ---
 
@@ -91,28 +187,28 @@ Products (1) --------- (N) Order Items
 
 # 🚀 Features
 
-### Customers
+## Customers
 
 * Create customer
 * List customers
 * Get customer by ID
 
-### Products
+## Products
 
 * Create product
 * List products
 * Get product by ID
 
-### Orders
+## Orders
 
-* Create order with multiple items
+* Create order with multiple products
 * Validate customer existence
 * Validate product existence
 * Validate stock availability
 * Calculate order total
-* List orders with pagination
 * Retrieve order details
 * Cancel order
+* Paginated listing
 
 ---
 
@@ -126,7 +222,7 @@ Products (1) --------- (N) Order Items
 POST /customers
 ```
 
-### Get Customers
+### List Customers
 
 ```http
 GET /customers
@@ -148,7 +244,7 @@ GET /customers/:id
 POST /products
 ```
 
-### Get Products
+### List Products
 
 ```http
 GET /products
@@ -170,7 +266,7 @@ GET /products/:id
 POST /orders
 ```
 
-### Get Orders
+### List Orders
 
 ```http
 GET /orders?page=1&limit=10
@@ -190,19 +286,33 @@ PATCH /orders/:id/cancel
 
 ---
 
-# ✅ Business Rules
+# 🧪 Example Request
 
-* Customer must exist before creating an order.
-* Product must exist before creating an order.
-* Stock must be sufficient.
-* Orders can contain multiple products.
-* Order total is calculated through SQL query.
-* Cancelled orders cannot be cancelled again.
-* Referential integrity is enforced through foreign keys.
+## Create Customer
+
+```json
+{
+  "name": "Vitor Melo",
+  "email": "vitor@email.com",
+  "phone": "+44 7785 314195"
+}
+```
 
 ---
 
-# 🧪 Example Order Request
+## Create Product
+
+```json
+{
+  "name": "Notebook Dell",
+  "price": 3500,
+  "stock": 5
+}
+```
+
+---
+
+## Create Order
 
 ```json
 {
@@ -222,15 +332,32 @@ PATCH /orders/:id/cancel
 
 ---
 
+# ✅ Business Rules
+
+* Customer must exist before creating an order.
+* Product must exist before creating an order.
+* Stock must be sufficient.
+* Orders can contain multiple products.
+* Order total is calculated through SQL queries.
+* Referential integrity is enforced through Foreign Keys.
+* Cancelled orders cannot be cancelled again.
+* Completed orders cannot be cancelled.
+
+---
+
 # ▶️ Running Locally
 
-Install dependencies:
+## Install dependencies
 
 ```bash
 npm install
 ```
 
-Create `.env`:
+---
+
+## Configure Environment Variables
+
+Create a `.env` file:
 
 ```env
 PORT=3000
@@ -242,13 +369,17 @@ DB_PASSWORD=YOUR_PASSWORD
 DB_NAME=defaultdb
 ```
 
-Run database setup:
+---
+
+## Create Database Tables
 
 ```bash
 node src/setupDatabase.js
 ```
 
-Start server:
+---
+
+## Start Server
 
 ```bash
 npm run dev
@@ -256,18 +387,49 @@ npm run dev
 
 ---
 
-# 📚 What I Learned
+# 🧪 Tested Scenarios
 
-* Relational database modeling
-* SQL relationships
-* Foreign Keys
-* JOIN queries
-* Transactions
-* Repository Pattern
-* Service Layer
-* REST API design
-* Business rules validation
+### Success Cases
+
+* Create customer
+* Create product
+* Create order
+* List products
+* Retrieve order details
+* Cancel order
+
+### Error Cases
+
+* Customer not found
+* Product not found
+* Insufficient stock
+* Invalid payload
+* Cancel already cancelled order
+* Invalid route
 
 ---
 
-Developed by **Vitor Dutra Melo**
+# 📚 What I Learned
+
+* Relational Database Modeling
+* SQL Relationships
+* Foreign Keys
+* JOIN Queries
+* Transactions
+* Repository Pattern
+* Service Layer Architecture
+* REST API Development
+* Business Rules Validation
+* Pagination
+
+---
+
+# 👨‍💻 Author
+
+**Vitor Dutra Melo**
+
+Backend Developer
+
+GitHub:
+https://github.com/VitorDutraMelo
+

@@ -1,0 +1,48 @@
+CREATE TABLE IF NOT EXISTS d06_customers (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(150) NOT NULL UNIQUE,
+  phone VARCHAR(30),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS d06_products (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  price DECIMAL(10,2) NOT NULL,
+  stock INT NOT NULL DEFAULT 0,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS d06_orders (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  customer_id INT NOT NULL,
+  status ENUM('pending', 'completed', 'cancelled') DEFAULT 'pending',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+  CONSTRAINT fk_d06_orders_customer
+    FOREIGN KEY (customer_id)
+    REFERENCES d06_customers(id)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS d06_order_items (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  order_id INT NOT NULL,
+  product_id INT NOT NULL,
+  quantity INT NOT NULL,
+  unit_price DECIMAL(10,2) NOT NULL,
+
+  CONSTRAINT fk_d06_order_items_order
+    FOREIGN KEY (order_id)
+    REFERENCES d06_orders(id)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+
+  CONSTRAINT fk_d06_order_items_product
+    FOREIGN KEY (product_id)
+    REFERENCES d06_products(id)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE
+);

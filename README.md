@@ -84,7 +84,7 @@ Building a structured API using modular architecture and RESTful routes.
 * Modules
 * Dependency Injection
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Completed
 
 ---
 
@@ -101,7 +101,7 @@ Introduction to containerization and environment standardization.
 * Images
 * Dockerfile
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -118,7 +118,7 @@ Introduction to automated testing and backend reliability.
 * Assertions
 * Test Coverage
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -136,7 +136,7 @@ Advanced relational database modeling.
 * Many-to-Many
 * SQL Joins
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -153,8 +153,7 @@ Modeling a social platform using NoSQL principles.
 * Scalability
 * Aggregation
 
-**Status:** ⏳ Planned
-
+**Status:** 🚧 In Progress
 ---
 
 ## Challenge 08 — Complete REST API

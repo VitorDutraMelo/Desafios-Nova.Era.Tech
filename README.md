@@ -152,7 +152,7 @@ Modeling a social platform using NoSQL principles.
 * Scalability
 * Aggregation
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Completed
 ---
 
 ## Challenge 08 — Complete REST API
@@ -168,7 +168,7 @@ Building a robust production-ready API.
 * Error Handling
 * Clean Code
 
-**Status:** ⏳ Planned
+**Status:** 🚧 In Progress
 
 ---
 

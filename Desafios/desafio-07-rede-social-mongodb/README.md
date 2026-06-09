@@ -30,7 +30,7 @@ O objetivo deste projeto é construir a base de uma mini rede social, utilizando
 
 ### ✅ Feed filtrado por hashtag
 
-![Filtrar por Hashtag](./images/filtrar-post.png)
+![Filtrar por Hashtag](./images/filtrar-por-hastags.png)
 
 ---
 

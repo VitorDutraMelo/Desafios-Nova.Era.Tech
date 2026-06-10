@@ -168,7 +168,7 @@ Building a robust production-ready API.
 * Error Handling
 * Clean Code
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Completed
 
 ---
 
@@ -185,7 +185,7 @@ Managing multiple backend services using containers.
 * Application Containers
 * Service Orchestration
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -202,7 +202,7 @@ Improving software quality through advanced testing.
 * Async Testing
 * Integration Tests
 
-**Status:** ⏳ Planned
+**Status:** 🚧 In Progress
 
 ---
 

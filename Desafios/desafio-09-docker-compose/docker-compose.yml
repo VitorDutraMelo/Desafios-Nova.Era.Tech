@@ -1,0 +1,53 @@
+services:
+  api:
+    build: .
+    container_name: desafio_09_api
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - desafio_09_network
+    restart: always
+
+  db:
+    image: mysql:8.4
+    container_name: desafio_09_mysql
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: docker_compose_db
+      MYSQL_USER: docker_user
+      MYSQL_PASSWORD: docker_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - desafio_09_network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "docker_user", "-pdocker_password"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: always
+
+  adminer:
+    image: adminer
+    container_name: desafio_09_adminer
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - desafio_09_network
+    restart: always
+
+volumes:
+  mysql_data:
+
+networks:
+  desafio_09_network:
+    driver: bridge

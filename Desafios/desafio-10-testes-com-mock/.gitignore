@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Coverage
+coverage/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/

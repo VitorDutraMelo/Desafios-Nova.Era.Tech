@@ -1,0 +1,26 @@
+{
+  "name": "desafio-10-testes-com-mock",
+  "version": "1.0.0",
+  "description": "Nova Era Tech Challenge 10 - Unit tests with mocks and spies using Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "jest",
+    "mocks",
+    "spies",
+    "unit-tests",
+    "nodejs"
+  ],
+  "author": "Vitor Dutra Melo",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}

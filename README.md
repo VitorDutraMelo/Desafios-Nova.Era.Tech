@@ -330,228 +330,257 @@ Complete all 15 challenges and build a strong backend portfolio demonstrating pr
 
 ---
 
-📚 Frontend Challenges Roadmap
-Challenge 01 — Personal Page
+# 📚 Frontend Challenges Roadmap
 
-+500 XP
+## Challenge 01 — Personal Page
 
-First HTML challenge focused on creating a personal web page using semantic structure and personal information.
+**+500 XP**
 
-Topics:
+First HTML challenge focused on creating a personal page using semantic structure and personal information.
 
-HTML5
-Semantic Elements
-Images
-Links
-Personal Information
+**Topics:**
 
-Status: ⏳ Planned
+* HTML5
+* Semantic Elements
+* Images
+* Links
+* Personal Information
 
-Challenge 02 — Anime List
+**Status:** ⏳ Planned
 
-+500 XP
+---
+
+## Challenge 02 — Anime List
+
+**+500 XP**
 
 Building a themed page displaying anime titles, descriptions, and images.
 
-Topics:
+**Topics:**
 
-Lists
-Images
-Content Structure
-HTML Fundamentals
+* Lists
+* Images
+* Content Structure
+* HTML Fundamentals
 
-Status: ⏳ Planned
+**Status:** ⏳ Planned
 
-Challenge 03 — Forms
+---
 
-+500 XP
+## Challenge 03 — Forms
+
+**+500 XP**
 
 Creating interactive forms using different input types and native browser validation.
 
-Topics:
+**Topics:**
 
-Forms
-Inputs
-Validation
-User Interaction
+* Forms
+* Inputs
+* Validation
+* User Interaction
 
-Status: ⏳ Planned
+**Status:** ⏳ Planned
 
-Challenge 04 — Product Table
+---
 
-+500 XP
+## Challenge 04 — Product Table
+
+**+500 XP**
 
 Displaying structured product information using HTML tables.
 
-Topics:
+**Topics:**
 
-Tables
-Data Organization
-HTML Structure
+* Tables
+* Data Organization
+* HTML Structure
 
-Status: ⏳ Planned
+**Status:** ⏳ Planned
 
-Challenge 05 — News Portal
+---
 
-+500 XP
+## Challenge 05 — News Portal
+
+**+500 XP**
 
 Building a complete news portal layout with multiple content sections.
 
-Topics:
+**Topics:**
 
-Semantic HTML
-Navigation
-Content Layout
+* Semantic HTML
+* Navigation
+* Content Layout
 
-Status: ⏳ Planned
+**Status:** ⏳ Planned
 
-Challenge 06 — Product Card
+---
 
-+1000 XP
+## Challenge 06 — Product Card
+
+**+1000 XP**
 
 Creating a visually appealing product card using CSS styling techniques.
 
-Topics:
+**Topics:**
 
-CSS
-Box Model
-Typography
-Colors
+* CSS
+* Box Model
+* Typography
+* Colors
 
-Status: ⏳ Planned
+**Status:** ⏳ Planned
 
-Challenge 07 — Landing Page
+---
 
-+1000 XP
+## Challenge 07 — Landing Page
+
+**+1000 XP**
 
 Building a modern responsive landing page.
 
-Topics:
+**Topics:**
 
-Responsive Design
-Layouts
-CSS Styling
+* Responsive Design
+* Layouts
+* CSS Styling
 
-Status: ⏳ Planned
+**Status:** ⏳ Planned
 
-Challenge 08 — Instagram Profile
+---
 
-+1000 XP
+## Challenge 08 — Instagram Profile
+
+**+1000 XP**
 
 Recreating the Instagram profile interface using HTML and CSS.
 
-Topics:
+**Topics:**
 
-CSS Grid
-Flexbox
-UI Replication
+* CSS Grid
+* Flexbox
+* UI Replication
 
-Status: ⏳ Planned
+**Status:** ⏳ Planned
 
-Challenge 09 — Restaurant Website
+---
 
-+1000 XP
+## Challenge 09 — Restaurant Website
+
+**+1000 XP**
 
 Creating a complete restaurant website with menu and presentation sections.
 
-Topics:
+**Topics:**
 
-Responsive Design
-Layout Structure
-CSS Components
+* Responsive Design
+* Layout Structure
+* CSS Components
 
-Status: ⏳ Planned
+**Status:** ⏳ Planned
 
-Challenge 10 — Login Page
+---
 
-+1000 XP
+## Challenge 10 — Login Page
+
+**+1000 XP**
 
 Developing a professional login page with visual feedback and form validation.
 
-Topics:
+**Topics:**
 
-Forms
-CSS Pseudo-Classes
-User Experience
+* Forms
+* CSS Pseudo-Classes
+* User Experience
 
-Status: ⏳ Planned
+**Status:** ⏳ Planned
 
-Challenge 11 — Portfolio
+---
 
-+1500 XP
+## Challenge 11 — Portfolio
+
+**+1500 XP**
 
 Building a complete personal portfolio website.
 
-Topics:
+**Topics:**
 
-Projects Showcase
-Skills Section
-Contact Form
+* Projects Showcase
+* Skills Section
+* Contact Form
 
-Status: ⏳ Planned
+**Status:** ⏳ Planned
 
-Challenge 12 — Discord Clone
+---
 
-+1500 XP
+## Challenge 12 — Discord Clone
 
-Replicating Discord's interface and layout.
+**+1500 XP**
 
-Topics:
+Recreating Discord's interface and layout.
 
-Complex Layouts
-UI Replication
-Flexbox
+**Topics:**
 
-Status: ⏳ Planned
+* Complex Layouts
+* UI Replication
+* Flexbox
 
-Challenge 13 — Blog
+**Status:** ⏳ Planned
 
-+1500 XP
+---
+
+## Challenge 13 — Blog
+
+**+1500 XP**
 
 Creating a complete blog interface with sidebar and article pages.
 
-Topics:
+**Topics:**
 
-Blog Layout
-Typography
-Content Organization
+* Blog Layout
+* Typography
+* Content Organization
 
-Status: ⏳ Planned
+**Status:** ⏳ Planned
 
-Challenge 14 — Navbar
+---
 
-+1500 XP
+## Challenge 14 — Navbar
+
+**+1500 XP**
 
 Building a professional responsive navigation bar with dropdown menus.
 
-Topics:
+**Topics:**
 
-Navigation
-Dropdown Menus
-Responsive Design
+* Navigation
+* Dropdown Menus
+* Responsive Design
 
-Status: ⏳ Planned
+**Status:** ⏳ Planned
 
-Challenge 15 — Themed Page
+---
 
-+1500 XP
+## Challenge 15 — Themed Page
 
-Final frontend project showcasing all HTML and CSS concepts learned during the formation.
+**+1500 XP**
 
-Topics:
+Final frontend project showcasing all HTML and CSS concepts learned throughout the formation.
 
-Responsive Design
-UI Development
-Frontend Best Practices
+**Topics:**
 
-Status: ⏳ Planned
+* Responsive Design
+* UI Development
+* Frontend Best Practices
 
-E depois da sua tabela de Backend, você cria uma segunda tabela exatamente igual:
+**Status:** ⏳ Planned
+
+---
 
 # 📊 Frontend Progress
 
 | Challenge | Status |
-| ------------------------- | -------------- |
+| ---------- | ---------- |
 | 01 - Personal Page | ⏳ Planned |
 | 02 - Anime List | ⏳ Planned |
 | 03 - Forms | ⏳ Planned |
@@ -568,6 +597,22 @@ E depois da sua tabela de Backend, você cria uma segunda tabela exatamente igua
 | 14 - Navbar | ⏳ Planned |
 | 15 - Themed Page | ⏳ Planned |
 
+---
+
+# 🎯 Frontend Goal
+
+Complete all 15 frontend challenges and build a strong portfolio demonstrating practical experience with:
+
+* HTML5
+* CSS3
+* Responsive Design
+* Flexbox
+* CSS Grid
+* UI Development
+* Accessibility
+* Frontend Best Practices
+
+---
 # 📬 Contact
 
 **LinkedIn:**

@@ -168,7 +168,7 @@ Building a robust production-ready API.
 * Error Handling
 * Clean Code
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Completed
 
 ---
 
@@ -185,7 +185,7 @@ Managing multiple backend services using containers.
 * Application Containers
 * Service Orchestration
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -202,7 +202,7 @@ Improving software quality through advanced testing.
 * Async Testing
 * Integration Tests
 
-**Status:** ⏳ Planned
+**Status:** 🚧 In Progress
 
 ---
 
@@ -297,16 +297,16 @@ Capstone project showcasing everything learned throughout the formation.
 
 | Challenge                       | Status         |
 | ------------------------------- | -------------- |
-| 01 - CRUD with MySQL            | ✅ Completed    |
-| 02 - Basic MongoDB              | 🚧 In Progress |
-| 03 - API with NestJS            | ⏳ Planned      |
-| 04 - Docker Fundamentals        | ⏳ Planned      |
-| 05 - Testing with Jest          | ⏳ Planned      |
-| 06 - SQL Relationships          | ⏳ Planned      |
-| 07 - MongoDB Social Network     | ⏳ Planned      |
-| 08 - Complete REST API          | ⏳ Planned      |
-| 09 - Docker Compose             | ⏳ Planned      |
-| 10 - Mock Testing               | ⏳ Planned      |
+| 01 - CRUD with MySQL            | ✅ Completed   |
+| 02 - Basic MongoDB              | ✅ Completed   |
+| 03 - API with NestJS            | ✅ Completed   |
+| 04 - Docker Fundamentals        | ✅ Completed   |
+| 05 - Testing with Jest          | ✅ Completed   |
+| 06 - SQL Relationships          | ✅ Completed   |
+| 07 - MongoDB Social Network     | ✅ Completed   |
+| 08 - Complete REST API          | ✅ Completed   |
+| 09 - Docker Compose             | ✅ Completed   |
+| 10 - Mock Testing               | 🚧 In Progress |
 | 11 - Spotify Style API          | ⏳ Planned      |
 | 12 - Authentication             | ⏳ Planned      |
 | 13 - Advanced Docker            | ⏳ Planned      |

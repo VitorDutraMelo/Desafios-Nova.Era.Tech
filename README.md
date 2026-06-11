@@ -202,7 +202,7 @@ Improving software quality through advanced testing.
 * Async Testing
 * Integration Tests
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Completed
 
 ---
 
@@ -219,7 +219,7 @@ Advanced API project with richer business logic.
 * Advanced CRUD
 * API Design
 
-**Status:** ⏳ Planned
+**Status:** 🚧 In Progress
 
 ---
 
@@ -306,8 +306,8 @@ Capstone project showcasing everything learned throughout the formation.
 | 07 - MongoDB Social Network     | ✅ Completed   |
 | 08 - Complete REST API          | ✅ Completed   |
 | 09 - Docker Compose             | ✅ Completed   |
-| 10 - Mock Testing               | 🚧 In Progress |
-| 11 - Spotify Style API          | ⏳ Planned      |
+| 10 - Mock Testing               | ✅ Completed   |
+| 11 - Spotify Style API          | 🚧 In Progress |
 | 12 - Authentication             | ⏳ Planned      |
 | 13 - Advanced Docker            | ⏳ Planned      |
 | 14 - Multi-Service Architecture | ⏳ Planned      |
@@ -329,6 +329,244 @@ Complete all 15 challenges and build a strong backend portfolio demonstrating pr
 * Backend Best Practices
 
 ---
+
+📚 Frontend Challenges Roadmap
+Challenge 01 — Personal Page
+
++500 XP
+
+First HTML challenge focused on creating a personal web page using semantic structure and personal information.
+
+Topics:
+
+HTML5
+Semantic Elements
+Images
+Links
+Personal Information
+
+Status: ⏳ Planned
+
+Challenge 02 — Anime List
+
++500 XP
+
+Building a themed page displaying anime titles, descriptions, and images.
+
+Topics:
+
+Lists
+Images
+Content Structure
+HTML Fundamentals
+
+Status: ⏳ Planned
+
+Challenge 03 — Forms
+
++500 XP
+
+Creating interactive forms using different input types and native browser validation.
+
+Topics:
+
+Forms
+Inputs
+Validation
+User Interaction
+
+Status: ⏳ Planned
+
+Challenge 04 — Product Table
+
++500 XP
+
+Displaying structured product information using HTML tables.
+
+Topics:
+
+Tables
+Data Organization
+HTML Structure
+
+Status: ⏳ Planned
+
+Challenge 05 — News Portal
+
++500 XP
+
+Building a complete news portal layout with multiple content sections.
+
+Topics:
+
+Semantic HTML
+Navigation
+Content Layout
+
+Status: ⏳ Planned
+
+Challenge 06 — Product Card
+
++1000 XP
+
+Creating a visually appealing product card using CSS styling techniques.
+
+Topics:
+
+CSS
+Box Model
+Typography
+Colors
+
+Status: ⏳ Planned
+
+Challenge 07 — Landing Page
+
++1000 XP
+
+Building a modern responsive landing page.
+
+Topics:
+
+Responsive Design
+Layouts
+CSS Styling
+
+Status: ⏳ Planned
+
+Challenge 08 — Instagram Profile
+
++1000 XP
+
+Recreating the Instagram profile interface using HTML and CSS.
+
+Topics:
+
+CSS Grid
+Flexbox
+UI Replication
+
+Status: ⏳ Planned
+
+Challenge 09 — Restaurant Website
+
++1000 XP
+
+Creating a complete restaurant website with menu and presentation sections.
+
+Topics:
+
+Responsive Design
+Layout Structure
+CSS Components
+
+Status: ⏳ Planned
+
+Challenge 10 — Login Page
+
++1000 XP
+
+Developing a professional login page with visual feedback and form validation.
+
+Topics:
+
+Forms
+CSS Pseudo-Classes
+User Experience
+
+Status: ⏳ Planned
+
+Challenge 11 — Portfolio
+
++1500 XP
+
+Building a complete personal portfolio website.
+
+Topics:
+
+Projects Showcase
+Skills Section
+Contact Form
+
+Status: ⏳ Planned
+
+Challenge 12 — Discord Clone
+
++1500 XP
+
+Replicating Discord's interface and layout.
+
+Topics:
+
+Complex Layouts
+UI Replication
+Flexbox
+
+Status: ⏳ Planned
+
+Challenge 13 — Blog
+
++1500 XP
+
+Creating a complete blog interface with sidebar and article pages.
+
+Topics:
+
+Blog Layout
+Typography
+Content Organization
+
+Status: ⏳ Planned
+
+Challenge 14 — Navbar
+
++1500 XP
+
+Building a professional responsive navigation bar with dropdown menus.
+
+Topics:
+
+Navigation
+Dropdown Menus
+Responsive Design
+
+Status: ⏳ Planned
+
+Challenge 15 — Themed Page
+
++1500 XP
+
+Final frontend project showcasing all HTML and CSS concepts learned during the formation.
+
+Topics:
+
+Responsive Design
+UI Development
+Frontend Best Practices
+
+Status: ⏳ Planned
+
+E depois da sua tabela de Backend, você cria uma segunda tabela exatamente igual:
+
+# 📊 Frontend Progress
+
+| Challenge | Status |
+| ------------------------- | -------------- |
+| 01 - Personal Page | ⏳ Planned |
+| 02 - Anime List | ⏳ Planned |
+| 03 - Forms | ⏳ Planned |
+| 04 - Product Table | ⏳ Planned |
+| 05 - News Portal | ⏳ Planned |
+| 06 - Product Card | ⏳ Planned |
+| 07 - Landing Page | ⏳ Planned |
+| 08 - Instagram Profile | ⏳ Planned |
+| 09 - Restaurant Website | ⏳ Planned |
+| 10 - Login Page | ⏳ Planned |
+| 11 - Portfolio | ⏳ Planned |
+| 12 - Discord Clone | ⏳ Planned |
+| 13 - Blog | ⏳ Planned |
+| 14 - Navbar | ⏳ Planned |
+| 15 - Themed Page | ⏳ Planned |
 
 # 📬 Contact
 

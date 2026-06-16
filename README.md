@@ -220,6 +220,7 @@ Advanced API project with richer business logic.
 * API Design
 
 **Status:** ✅ Completed
+
 ---
 
 ## Challenge 12 — Authentication
@@ -236,7 +237,7 @@ Implementing secure authentication and authorization.
 * Password Hashing
 * Protected Routes
 
-**Status:** ✅ Completed
+**Status:** 🚧 In Progress
 
 ---
 
@@ -252,7 +253,7 @@ Professional containerization strategies.
 * Docker Optimization
 * Production Deployment
 
-**Status:** 🚧 In Progress
+**Status:** ⏳ Planned
 
 ---
 
@@ -306,8 +307,8 @@ Capstone project showcasing everything learned throughout the formation.
 | 08 - Complete REST API          | ✅ Completed   |
 | 09 - Docker Compose             | ✅ Completed   |
 | 10 - Mock Testing               | ✅ Completed   |
-| 11 - Spotify Style API          | 🚧 In Progress |
-| 12 - Authentication             | ⏳ Planned      |
+| 11 - Spotify Style API          | ✅ Completed   |
+| 12 - Authentication             | 🚧 In Progress |
 | 13 - Advanced Docker            | ⏳ Planned      |
 | 14 - Multi-Service Architecture | ⏳ Planned      |
 | 15 - Final Project              | ⏳ Planned      |

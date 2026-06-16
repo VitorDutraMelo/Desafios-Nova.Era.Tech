@@ -219,8 +219,7 @@ Advanced API project with richer business logic.
 * Advanced CRUD
 * API Design
 
-**Status:** 🚧 In Progress
-
+**Status:** ✅ Completed
 ---
 
 ## Challenge 12 — Authentication
@@ -237,7 +236,7 @@ Implementing secure authentication and authorization.
 * Password Hashing
 * Protected Routes
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -253,7 +252,7 @@ Professional containerization strategies.
 * Docker Optimization
 * Production Deployment
 
-**Status:** ⏳ Planned
+**Status:** 🚧 In Progress
 
 ---
 

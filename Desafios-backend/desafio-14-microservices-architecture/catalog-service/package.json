@@ -1,0 +1,13 @@
+{
+  "name": "catalog-service",
+  "version": "1.0.0",
+  "description": "Catalog service for microservices architecture challenge",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

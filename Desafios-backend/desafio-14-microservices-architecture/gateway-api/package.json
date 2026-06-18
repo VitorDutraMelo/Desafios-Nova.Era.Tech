@@ -1,0 +1,14 @@
+{
+  "name": "gateway-api",
+  "version": "1.0.0",
+  "description": "Gateway API for microservices architecture challenge",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "express": "^4.19.2"
+  }
+}

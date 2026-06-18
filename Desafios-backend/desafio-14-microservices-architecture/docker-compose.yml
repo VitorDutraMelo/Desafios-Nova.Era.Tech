@@ -1,0 +1,33 @@
+services:
+  user-service:
+    build: ./user-service
+    container_name: user-service
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - SERVICE_NAME=user-service
+
+  catalog-service:
+    build: ./catalog-service
+    container_name: catalog-service
+    ports:
+      - "3002:3002"
+    environment:
+      - PORT=3002
+      - SERVICE_NAME=catalog-service
+
+  gateway-api:
+    build: ./gateway-api
+    container_name: gateway-api
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - SERVICE_NAME=gateway-api
+      - USER_SERVICE_URL=http://user-service:3001
+      - CATALOG_SERVICE_URL=http://catalog-service:3002
+      - REQUEST_TIMEOUT=3000
+    depends_on:
+      - user-service
+      - catalog-service

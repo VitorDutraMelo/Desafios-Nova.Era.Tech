@@ -237,7 +237,7 @@ Implementing secure authentication and authorization.
 * Password Hashing
 * Protected Routes
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Completed
 
 ---
 
@@ -253,7 +253,7 @@ Professional containerization strategies.
 * Docker Optimization
 * Production Deployment
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -270,7 +270,7 @@ Distributed backend architecture with service separation.
 * Scalability
 * Communication Patterns
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -289,7 +289,7 @@ Capstone project showcasing everything learned throughout the formation.
 * Docker
 * Architecture
 
-**Status:** ⏳ Planned
+**Status:** 🚧 In Progress
 
 ---
 
@@ -308,10 +308,10 @@ Capstone project showcasing everything learned throughout the formation.
 | 09 - Docker Compose             | ✅ Completed   |
 | 10 - Mock Testing               | ✅ Completed   |
 | 11 - Spotify Style API          | ✅ Completed   |
-| 12 - Authentication             | 🚧 In Progress |
-| 13 - Advanced Docker            | ⏳ Planned      |
-| 14 - Multi-Service Architecture | ⏳ Planned      |
-| 15 - Final Project              | ⏳ Planned      |
+| 12 - Authentication             | ✅ Completed   |
+| 13 - Advanced Docker            | ✅ Completed   |
+| 14 - Multi-Service Architecture | ✅ Completed   |
+| 15 - Final Project              | 🚧 In Progress |
 
 ---
 

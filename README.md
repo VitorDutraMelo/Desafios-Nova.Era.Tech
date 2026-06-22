@@ -289,7 +289,7 @@ Capstone project showcasing everything learned throughout the formation.
 * Docker
 * Architecture
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Completed
 
 ---
 
@@ -311,7 +311,7 @@ Capstone project showcasing everything learned throughout the formation.
 | 12 - Authentication             | ✅ Completed   |
 | 13 - Advanced Docker            | ✅ Completed   |
 | 14 - Multi-Service Architecture | ✅ Completed   |
-| 15 - Final Project              | 🚧 In Progress |
+| 15 - Final Project              | ✅ Completed   |
 
 ---
 
@@ -346,7 +346,7 @@ First HTML challenge focused on creating a personal page using semantic structur
 * Links
 * Personal Information
 
-**Status:** ⏳ Planned
+**Status:**  🚧 In Progress
 
 ---
 

@@ -582,7 +582,7 @@ Final frontend project showcasing all HTML and CSS concepts learned throughout t
 
 | Challenge | Status |
 | ---------- | ---------- |
-| 01 - Personal Page | ⏳ Planned |
+| 01 - Personal Page | 🚧 In Progress |
 | 02 - Anime List | ⏳ Planned |
 | 03 - Forms | ⏳ Planned |
 | 04 - Product Table | ⏳ Planned |

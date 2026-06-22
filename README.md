@@ -153,6 +153,7 @@ Modeling a social platform using NoSQL principles.
 * Aggregation
 
 **Status:** ✅ Completed
+
 ---
 
 ## Challenge 08 — Complete REST API

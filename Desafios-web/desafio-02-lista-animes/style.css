@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: #f9fafb;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #111827, #1e293b);
+  border-bottom: 1px solid #334155;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #facc15;
+}
+
+header p {
+  max-width: 750px;
+  margin: 0 auto;
+  color: #d1d5db;
+  font-size: 1.1rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+
+.ranking-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  list-style-position: inside;
+}
+
+.anime-card {
+  background: rgba(31, 41, 55, 0.95);
+  padding: 22px;
+  border-radius: 18px;
+  border: 1px solid #374151;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.anime-card:hover {
+  transform: translateY(-6px);
+  border-color: #facc15;
+}
+
+.anime-card::marker {
+  color: #facc15;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.anime-card article {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.anime-card h3 {
+  font-size: 1.7rem;
+  color: #facc15;
+}
+
+.anime-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+  border: 1px solid #475569;
+  background: #020617;
+}
+
+.anime-card p {
+  color: #e5e7eb;
+}
+
+.anime-card strong {
+  color: #facc15;
+}
+
+.anime-card iframe {
+  width: 100%;
+  height: 260px;
+  border: none;
+  border-radius: 14px;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #111827;
+  color: #d1d5db;
+  border-top: 1px solid #334155;
+}
+
+@media (max-width: 900px) {
+  .ranking-list {
+    grid-template-columns: 1fr;
+  }
+
+  .anime-card img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 45px 16px;
+  }
+
+  header h1 {
+    font-size: 2.1rem;
+  }
+
+  main {
+    margin: 35px auto;
+    padding: 0 16px;
+  }
+
+  .anime-card {
+    padding: 18px;
+  }
+
+  .anime-card img {
+    height: 240px;
+  }
+
+  .anime-card iframe {
+    height: 210px;
+  }
+}

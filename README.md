@@ -347,7 +347,7 @@ First HTML challenge focused on creating a personal page using semantic structur
 * Links
 * Personal Information
 
-**Status:**  🚧 In Progress
+**Status:**  ✅ Completed
 
 ---
 
@@ -364,7 +364,7 @@ Building a themed page displaying anime titles, descriptions, and images.
 * Content Structure
 * HTML Fundamentals
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -381,7 +381,7 @@ Creating interactive forms using different input types and native browser valida
 * Validation
 * User Interaction
 
-**Status:** ⏳ Planned
+**Status:** 🚧 In Progress
 
 ---
 

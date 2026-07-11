@@ -117,8 +117,6 @@ By completing this project, I strengthened my understanding of HTML forms, seman
 
 Backend & Full Stack Developer in progress 🇧🇷
 
-GitHub: https://github.com/SEU-USUARIO
-
 ---
 
 ⭐ This project is part of the **Nova Era Tech Frontend Challenges**.

@@ -1,176 +1,118 @@
 # 🚀 Challenge 02 — Top 5 Favorite Animes
 
-This project was developed as part of the **Nova Era Tech Frontend Formation**.
+This is the second HTML challenge from the **Nova Era Tech Frontend Formation**.
 
-The goal of this challenge was to practice **HTML5 semantic structure**, **ordered lists**, **images**, **text organization**, and basic **CSS styling** by creating a ranking page of favorite animes.
-
----
-
-# 📖 About the Project
-
-This website presents my personal **Top 5 Favorite Animes**, including:
-
-* Ranking position
-* Anime name
-* Cover image
-* Short description
-* Personal rating
-* Official trailer
-
-The project also includes a responsive layout and modern card-based design.
+The objective of this project is to practice HTML fundamentals by creating a responsive webpage that showcases a personal ranking of favorite anime series using semantic elements, images, embedded videos, and modern CSS styling.
 
 ---
 
-# 🛠 Technologies Used
+## 🎯 Objective
 
-* HTML5
-* CSS3
-
----
-
-# 📦 Features
-
-✅ Top 5 anime ranking
-
-✅ Ordered list structure
-
-✅ Anime cover images
-
-✅ Personal descriptions
-
-✅ Personal ratings
-
-✅ Embedded YouTube trailers
-
-✅ Responsive design
-
-✅ Semantic HTML structure
+Build a visually appealing web page featuring a **Top 5 Favorite Animes** ranking while practicing semantic HTML, ordered lists, media embedding, and responsive layouts.
 
 ---
 
-# 📸 Project Preview
+## 🛠 Technologies Used
 
-## 🏠 Homepage
-
-Add your screenshot here:
-
-```md
-![Homepage Preview](./images/preview-home.png)
-```
+- HTML5
+- CSS3
 
 ---
 
-## 🥇 First Place Example
+## 📦 Features
 
-```md
-![Demon Slayer Card](./images/preview-demon-slayer.png)
-```
-
----
-
-## 🎬 Trailer Section
-
-```md
-![Trailer Section](./images/preview-trailer.png)
-```
+- 🏆 Top 5 anime ranking
+- 🖼 Anime cover images
+- 📝 Personal descriptions
+- ⭐ Personal ratings
+- 🎬 Embedded YouTube trailers
+- 📱 Responsive design
+- 🏗 Semantic HTML structure
+- 🎨 Modern card-based interface
 
 ---
 
-# 📁 Project Structure
+## 📁 Project Structure
 
 ```text
-challenge-02-top-animes/
+challenge-02-top-5-animes/
 │
 ├── index.html
 ├── style.css
 │
-└── images/
-    ├── attack-on-titan.jpg
-    ├── demon-slayer.jpg
-    ├── jujutsu-kaisen.jpg
-    ├── naruto.jpg
-    ├── one-piece.jpg
-    ├── preview-home.png
-    ├── preview-demon-slayer.png
-    └── preview-trailer.png
+├── images/
+│   ├── attack-on-titan.jpg
+│   ├── demon-slayer.jpg
+│   ├── jujutsu-kaisen.jpg
+│   ├── naruto.jpg
+│   ├── one-piece.jpg
+│   └── front.png
+│
+└── README.md
 ```
 
 ---
 
-# 🎯 Learning Objectives
+## 📚 What I Practiced
 
-During this challenge I practiced:
+Throughout this challenge I improved my knowledge of:
 
-* Semantic HTML elements
-* Ordered lists
-* Images and media embedding
-* Responsive layouts
-* Card-based UI design
-* External content integration using iframe
-* CSS styling and organization
+- Semantic HTML5
+- Ordered lists
+- Images
+- Responsive layouts
+- Embedded videos with iframe
+- Card-based UI design
+- CSS styling
+- Content organization
+- Modern page structure
 
 ---
 
-# 🚀 How to Run
+## 🚀 Getting Started
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/challenge-02-top-animes.git
+git clone https://github.com/your-username/challenge-02-top-5-animes.git
 ```
 
 Open the project folder:
 
 ```bash
-cd challenge-02-top-animes
+cd challenge-02-top-5-animes
 ```
 
-Run the project by opening:
-
-```text
-index.html
-```
-
-No installation or dependencies are required.
+Finally, open the `index.html` file in your preferred browser.
 
 ---
 
-# 🏆 Challenge Requirements Completed
+## ✅ Challenge Requirements
 
-| Requirement          | Status |
-| -------------------- | ------ |
-| Top 5 Ranking        | ✅      |
-| Ordered Lists        | ✅      |
-| Images               | ✅      |
-| Descriptions         | ✅      |
-| Personal Ratings     | ✅      |
-| Semantic HTML        | ✅      |
-| Organized Layout     | ✅      |
-| Basic CSS            | ✅      |
-| Trailers with iframe | ✅      |
+- Ordered list
+- Top 5 ranking
+- Anime images
+- Descriptions
+- Personal ratings
+- Embedded trailers
+- Semantic HTML
+- Responsive layout
+- Clean CSS organization
 
 ---
 
-# 👨‍💻 Author
+## 🎓 Learning Outcomes
+
+By completing this project, I reinforced my understanding of semantic HTML, responsive layouts, image handling, embedded media, CSS styling, and overall webpage organization.
+
+---
+
+## 👨‍💻 Author
 
 **Vitor Dutra Melo**
 
-Backend Developer transitioning into Full Stack Development.
-
-Currently focused on:
-
-* Node.js
-* Express.js
-* NestJS
-* PostgreSQL
-* MongoDB
-* Docker
-* TypeScript
+Backend & Full Stack Developer in progress 🇧🇷
 
 ---
 
-# 📚 Nova Era Tech Frontend Formation
-
-Challenge 02 from the Nova Era Tech Frontend learning path.
-
-Building projects, improving skills, and documenting the journey toward becoming a professional software developer.
+⭐ This project is part of the **Nova Era Tech Frontend Challenges** from **Nova Era Tech**.

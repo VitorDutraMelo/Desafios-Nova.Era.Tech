@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Sistema de controle de produtos e estoque do Armazém Nova Era."
+    />
+
+    <title>Estoque | Armazém Nova Era</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <a class="logo" href="#">
+          <span class="logo-icon" aria-hidden="true">📦</span>
+
+          <span>
+            <strong>Nova Era</strong>
+            <small>Controle de estoque</small>
+          </span>
+        </a>
+
+        <div class="header-status">
+          <span class="status-indicator"></span>
+          Sistema operacional
+        </div>
+      </div>
+    </header>
+
+    <main class="page-container">
+      <section class="hero">
+        <div class="hero-content">
+          <span class="hero-label">Desafio 04</span>
+
+          <h1>Estoque do Armazém Nova Era</h1>
+
+          <p>
+            Gerencie os produtos, acompanhe as quantidades disponíveis e
+            identifique rapidamente os itens com estoque baixo.
+          </p>
+        </div>
+
+        <div class="hero-decoration" aria-hidden="true">
+          <span>📋</span>
+        </div>
+      </section>
+
+      <section class="dashboard" aria-label="Resumo do estoque">
+        <article class="summary-card">
+          <div class="summary-icon">📦</div>
+
+          <div>
+            <span>Total de produtos</span>
+            <strong id="totalProductsCard">9</strong>
+          </div>
+        </article>
+
+        <article class="summary-card">
+          <div class="summary-icon warning-icon">⚠️</div>
+
+          <div>
+            <span>Estoque baixo</span>
+            <strong id="lowStockCard">3</strong>
+          </div>
+        </article>
+
+        <article class="summary-card">
+          <div class="summary-icon success-icon">✅</div>
+
+          <div>
+            <span>Unidades disponíveis</span>
+            <strong id="totalUnitsCard">3.215</strong>
+          </div>
+        </article>
+      </section>
+
+      <section class="products-section">
+        <div class="section-heading">
+          <div>
+            <span class="section-label">Inventário</span>
+            <h2>Tabela de produtos</h2>
+            <p>Lista completa dos produtos cadastrados no estoque.</p>
+          </div>
+
+          <button
+            id="openModalButton"
+            class="primary-button"
+            type="button"
+          >
+            <span aria-hidden="true">＋</span>
+            Adicionar produto
+          </button>
+        </div>
+
+        <div class="table-toolbar">
+          <label class="search-field" for="searchInput">
+            <span aria-hidden="true">⌕</span>
+
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Pesquisar por produto, categoria ou ID..."
+              autocomplete="off"
+            />
+          </label>
+
+          <label class="filter-field" for="categoryFilter">
+            <span class="sr-only">Filtrar por categoria</span>
+
+            <select id="categoryFilter">
+              <option value="all">Todas as categorias</option>
+              <option value="Ferramentas">Ferramentas</option>
+              <option value="Construção">Construção</option>
+              <option value="Acabamento">Acabamento</option>
+              <option value="Fixação">Fixação</option>
+              <option value="Elétrica">Elétrica</option>
+              <option value="Domótica">Domótica</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <caption>
+              Produtos disponíveis no estoque do Armazém Nova Era
+            </caption>
+
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Preço unitário</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+
+            <tbody id="productsTableBody">
+              <tr>
+                <td data-label="ID">
+                  <span class="product-id">#001</span>
+                </td>
+
+                <td data-label="Produto">
+                  <div class="product-info">
+                    <span class="product-icon">🔨</span>
+
+                    <div>
+                      <strong>Martelo de Borracha</strong>
+                      <small>Produto cadastrado</small>
+                    </div>
+                  </div>
+                </td>
+
+                <td data-label="Categoria">
+                  <span class="category-badge">Ferramentas</span>
+                </td>
+
+                <td data-label="Preço">R$ 29,90</td>
+
+                <td data-label="Quantidade" class="quantity-cell">
+                  150
+                </td>
+
+                <td data-label="Status">
+                  <span class="stock-status stock-available">
+                    Disponível
+                  </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-label="ID">
+                  <span class="product-id">#002</span>
+                </td>
+
+                <td data-label="Produto">
+                  <div class="product-info">
+                    <span class="product-icon">🪚</span>
+
+                    <div>
+                      <strong>Serra Circular XYZ</strong>
+                      <small>Produto cadastrado</small>
+                    </div>
+                  </div>
+                </td>
+
+                <td data-label="Categoria">
+                  <span class="category-badge">Ferramentas</span>
+                </td>
+
+                <td data-label="Preço">R$ 349,00</td>
+
+                <td data-label="Quantidade" class="quantity-cell">
+                  45
+                </td>
+
+                <td data-label="Status">
+                  <span class="stock-status stock-low">
+                    Estoque baixo
+                  </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-label="ID">
+                  <span class="product-id">#003</span>
+                </td>
+
+                <td data-label="Produto">
+                  <div class="product-info">
+                    <span class="product-icon">⬜</span>
+
+                    <div>
+                      <strong>Piso Cerâmico Bege 50x50</strong>
+                      <small>Produto cadastrado</small>
+                    </div>
+                  </div>
+                </td>
+
+                <td data-label="Categoria">
+                  <span class="category-badge">Construção</span>
+                </td>
+
+                <td data-label="Preço">R$ 55,00/m²</td>
+
+                <td data-label="Quantidade" class="quantity-cell">
+                  500
+                </td>
+
+                <td data-label="Status">
+                  <span class="stock-status stock-high">
+                    Estoque alto
+                  </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-label="ID">
+                  <span class="product-id">#004</span>
+                </td>
+
+                <td data-label="Produto">
+                  <div class="product-info">
+                    <span class="product-icon">🎨</span>
+
+                    <div>
+                      <strong>Tinta Acrílica Branca 18L</strong>
+                      <small>Produto cadastrado</small>
+                    </div>
+                  </div>
+                </td>
+
+                <td data-label="Categoria">
+                  <span class="category-badge">Acabamento</span>
+                </td>
+
+                <td data-label="Preço">R$ 210,00</td>
+
+                <td data-label="Quantidade" class="quantity-cell">
+                  80
+                </td>
+
+                <td data-label="Status">
+                  <span class="stock-status stock-low">
+                    Estoque baixo
+                  </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-label="ID">
+                  <span class="product-id">#005</span>
+                </td>
+
+                <td data-label="Produto">
+                  <div class="product-info">
+                    <span class="product-icon">🔩</span>
+
+                    <div>
+                      <strong>Parafusos Variados</strong>
+                      <small>Pacote com 100 unidades</small>
+                    </div>
+                  </div>
+                </td>
+
+                <td data-label="Categoria">
+                  <span class="category-badge">Fixação</span>
+                </td>
+
+                <td data-label="Preço">R$ 45,00</td>
+
+                <td data-label="Quantidade" class="quantity-cell">
+                  1200
+                </td>
+
+                <td data-label="Status">
+                  <span class="stock-status stock-high">
+                    Estoque alto
+                  </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-label="ID">
+                  <span class="product-id">#006</span>
+                </td>
+
+                <td data-label="Produto">
+                  <div class="product-info">
+                    <span class="product-icon">🧰</span>
+
+                    <div>
+                      <strong>Caixa de Ferramentas Pro</strong>
+                      <small>Produto cadastrado</small>
+                    </div>
+                  </div>
+                </td>
+
+                <td data-label="Categoria">
+                  <span class="category-badge">Ferramentas</span>
+                </td>
+
+                <td data-label="Preço">R$ 180,00</td>
+
+                <td data-label="Quantidade" class="quantity-cell">
+                  60
+                </td>
+
+                <td data-label="Status">
+                  <span class="stock-status stock-warning">
+                    Atenção
+                  </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-label="ID">
+                  <span class="product-id">#007</span>
+                </td>
+
+                <td data-label="Produto">
+                  <div class="product-info">
+                    <span class="product-icon">💡</span>
+
+                    <div>
+                      <strong>Lâmpada LED E27 10W</strong>
+                      <small>Produto cadastrado</small>
+                    </div>
+                  </div>
+                </td>
+
+                <td data-label="Categoria">
+                  <span class="category-badge">Elétrica</span>
+                </td>
+
+                <td data-label="Preço">R$ 12,50</td>
+
+                <td data-label="Quantidade" class="quantity-cell">
+                  950
+                </td>
+
+                <td data-label="Status">
+                  <span class="stock-status stock-high">
+                    Estoque alto
+                  </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-label="ID">
+                  <span class="product-id">#008</span>
+                </td>
+
+                <td data-label="Produto">
+                  <div class="product-info">
+                    <span class="product-icon">📶</span>
+
+                    <div>
+                      <strong>Interruptor Inteligente Wi-Fi</strong>
+                      <small>Produto cadastrado</small>
+                    </div>
+                  </div>
+                </td>
+
+                <td data-label="Categoria">
+                  <span class="category-badge">Domótica</span>
+                </td>
+
+                <td data-label="Preço">R$ 79,90</td>
+
+                <td data-label="Quantidade" class="quantity-cell">
+                  30
+                </td>
+
+                <td data-label="Status">
+                  <span class="stock-status stock-low">
+                    Estoque baixo
+                  </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-label="ID">
+                  <span class="product-id">#009</span>
+                </td>
+
+                <td data-label="Produto">
+                  <div class="product-info">
+                    <span class="product-icon">🖌️</span>
+
+                    <div>
+                      <strong>Pincel Profissional 2"</strong>
+                      <small>Produto cadastrado</small>
+                    </div>
+                  </div>
+                </td>
+
+                <td data-label="Categoria">
+                  <span class="category-badge">Acabamento</span>
+                </td>
+
+                <td data-label="Preço">R$ 15,90</td>
+
+                <td data-label="Quantidade" class="quantity-cell">
+                  200
+                </td>
+
+                <td data-label="Status">
+                  <span class="stock-status stock-available">
+                    Disponível
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td colspan="4">
+                  Resumo geral do inventário
+                </td>
+
+                <td id="tableTotalUnits">3.215 unidades</td>
+
+                <td id="tableTotalProducts">9 produtos</td>
+              </tr>
+            </tfoot>
+          </table>
+
+          <div id="emptyState" class="empty-state">
+            <span aria-hidden="true">🔍</span>
+            <h3>Nenhum produto encontrado</h3>
+            <p>Tente pesquisar utilizando outro nome ou categoria.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p>
+        Desenvolvido para o
+        <strong>Desafio 04 — Tabela de Produtos</strong>
+      </p>
+
+      <span>Nova Era Tech</span>
+    </footer>
+
+    <dialog id="productModal" class="product-modal">
+      <form id="productForm" class="product-form">
+        <header class="modal-header">
+          <div>
+            <span class="section-label">Novo produto</span>
+            <h2>Adicionar ao estoque</h2>
+          </div>
+
+          <button
+            id="closeModalButton"
+            class="close-button"
+            type="button"
+            aria-label="Fechar formulário"
+          >
+            ×
+          </button>
+        </header>
+
+        <div class="form-grid">
+          <label>
+            ID do produto
+
+            <input
+              id="productId"
+              type="text"
+              placeholder="Ex.: 010"
+              maxlength="3"
+              required
+            />
+          </label>
+
+          <label>
+            Nome do produto
+
+            <input
+              id="productName"
+              type="text"
+              placeholder="Ex.: Furadeira profissional"
+              required
+            />
+          </label>
+
+          <label>
+            Categoria
+
+            <select id="productCategory" required>
+              <option value="">Selecione uma categoria</option>
+              <option value="Ferramentas">Ferramentas</option>
+              <option value="Construção">Construção</option>
+              <option value="Acabamento">Acabamento</option>
+              <option value="Fixação">Fixação</option>
+              <option value="Elétrica">Elétrica</option>
+              <option value="Domótica">Domótica</option>
+            </select>
+          </label>
+
+          <label>
+            Preço unitário
+
+            <input
+              id="productPrice"
+              type="number"
+              placeholder="Ex.: 149.90"
+              min="0"
+              step="0.01"
+              required
+            />
+          </label>
+
+          <label class="full-field">
+            Quantidade em estoque
+
+            <input
+              id="productQuantity"
+              type="number"
+              placeholder="Ex.: 100"
+              min="0"
+              required
+            />
+          </label>
+        </div>
+
+        <div class="modal-actions">
+          <button
+            id="cancelModalButton"
+            class="secondary-button"
+            type="button"
+          >
+            Cancelar
+          </button>
+
+          <button class="primary-button" type="submit">
+            Salvar produto
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

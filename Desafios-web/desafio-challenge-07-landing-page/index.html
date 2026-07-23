@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Organize seus estudos de programação com a plataforma DevFlow."
+    />
+
+    <title>DevFlow | Organize seus estudos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-container">
+        <a href="#home" class="logo" aria-label="Página inicial da DevFlow">
+          <span class="logo-icon">&lt;/&gt;</span>
+          <span>DevFlow</span>
+        </a>
+
+        <button
+          class="menu-button"
+          id="menu-button"
+          type="button"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="navigation" id="navigation">
+          <a href="#home">Início</a>
+          <a href="#about">Sobre</a>
+          <a href="#benefits">Benefícios</a>
+          <a href="#contact">Contato</a>
+
+          <a href="#cta" class="navigation-button">
+            Começar agora
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <span class="section-tag">
+              🚀 Evolua seus estudos
+            </span>
+
+            <h1>
+              Organize seus estudos e acelere sua
+              <span>carreira como desenvolvedor</span>
+            </h1>
+
+            <p>
+              A DevFlow ajuda você a organizar tarefas, criar metas,
+              acompanhar seu progresso e manter uma rotina consistente
+              de aprendizado.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#cta" class="button button-primary">
+                Começar gratuitamente
+                <span aria-hidden="true">→</span>
+              </a>
+
+              <a href="#about" class="button button-secondary">
+                Conhecer a plataforma
+              </a>
+            </div>
+
+            <div class="hero-users">
+              <div class="user-avatars">
+                <span class="avatar avatar-one">JS</span>
+                <span class="avatar avatar-two">TS</span>
+                <span class="avatar avatar-three">ND</span>
+                <span class="avatar avatar-four">DB</span>
+              </div>
+
+              <div>
+                <strong>+2.500 estudantes</strong>
+                <span>já estão evoluindo com a DevFlow</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="dashboard-card">
+              <div class="dashboard-header">
+                <div>
+                  <span class="dashboard-label">Meu progresso</span>
+                  <h2>Plano de estudos</h2>
+                </div>
+
+                <span class="status-badge">Em andamento</span>
+              </div>
+
+              <div class="progress-content">
+                <div class="progress-information">
+                  <span>Progresso semanal</span>
+                  <strong>72%</strong>
+                </div>
+
+                <div class="progress-bar">
+                  <div class="progress-value"></div>
+                </div>
+              </div>
+
+              <div class="study-list">
+                <article class="study-item completed">
+                  <div class="study-icon">✓</div>
+
+                  <div>
+                    <h3>Fundamentos de HTML</h3>
+                    <p>Concluído</p>
+                  </div>
+                </article>
+
+                <article class="study-item completed">
+                  <div class="study-icon">✓</div>
+
+                  <div>
+                    <h3>Estilização com CSS</h3>
+                    <p>Concluído</p>
+                  </div>
+                </article>
+
+                <article class="study-item active">
+                  <div class="study-icon">3</div>
+
+                  <div>
+                    <h3>JavaScript básico</h3>
+                    <p>8 de 12 aulas concluídas</p>
+                  </div>
+                </article>
+
+                <article class="study-item">
+                  <div class="study-icon">4</div>
+
+                  <div>
+                    <h3>Projetos práticos</h3>
+                    <p>Próxima etapa</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="floating-card floating-card-top">
+              <span class="floating-icon">🔥</span>
+
+              <div>
+                <strong>12 dias</strong>
+                <span>de sequência</span>
+              </div>
+            </div>
+
+            <div class="floating-card floating-card-bottom">
+              <span class="floating-icon">🏆</span>
+
+              <div>
+                <strong>Meta alcançada</strong>
+                <span>5 horas estudadas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about section" id="about">
+        <div class="container about-container">
+          <div class="about-visual">
+            <div class="code-window">
+              <div class="window-header">
+                <div class="window-buttons">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <span>progress.js</span>
+              </div>
+
+              <pre><code><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"Você"</span>,
+  focus: <span class="code-green">"Evoluir todos os dias"</span>,
+  consistency: <span class="code-blue">true</span>,
+};
+
+<span class="code-purple">function</span> <span class="code-yellow">studyEveryDay</span>() {
+  developer.skills++;
+  developer.confidence++;
+  
+  <span class="code-purple">return</span> <span class="code-green">"Keep coding! 🚀"</span>;
+}</code></pre>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <span class="section-tag">Sobre a DevFlow</span>
+
+            <h2>
+              Sua evolução começa com uma rotina bem organizada
+            </h2>
+
+            <p>
+              Aprender programação pode parecer complicado quando não
+              existe uma direção clara. A DevFlow foi criada para
+              transformar grandes objetivos em pequenas tarefas
+              possíveis de concluir.
+            </p>
+
+            <p>
+              Com uma visão simples do seu progresso, você consegue
+              saber o que estudar, quais tarefas concluir e onde
+              precisa melhorar.
+            </p>
+
+            <ul class="about-list">
+              <li>
+                <span>✓</span>
+                Planejamento de estudos personalizado
+              </li>
+
+              <li>
+                <span>✓</span>
+                Acompanhamento diário de progresso
+              </li>
+
+              <li>
+                <span>✓</span>
+                Metas simples e alcançáveis
+              </li>
+            </ul>
+
+            <a href="#benefits" class="text-link">
+              Conhecer os benefícios
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="benefits section" id="benefits">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-tag">Principais benefícios</span>
+
+            <h2>Tudo o que você precisa para continuar evoluindo</h2>
+
+            <p>
+              Recursos simples e objetivos para ajudar você a manter
+              o foco durante sua jornada como desenvolvedor.
+            </p>
+          </div>
+
+          <div class="benefits-grid">
+            <article class="benefit-card">
+              <div class="benefit-icon">🎯</div>
+
+              <h3>Metas organizadas</h3>
+
+              <p>
+                Defina objetivos claros e transforme seus planos em
+                tarefas menores e mais fáceis de executar.
+              </p>
+
+              <a href="#cta">
+                Saiba mais
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <article class="benefit-card featured-card">
+              <span class="popular-badge">Mais utilizado</span>
+
+              <div class="benefit-icon">📊</div>
+
+              <h3>Acompanhe seu progresso</h3>
+
+              <p>
+                Visualize sua evolução, atividades concluídas e tempo
+                dedicado aos estudos durante a semana.
+              </p>
+
+              <a href="#cta">
+                Saiba mais
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <article class="benefit-card">
+              <div class="benefit-icon">⚡</div>
+
+              <h3>Mantenha a consistência</h3>
+
+              <p>
+                Crie uma rotina sustentável e acompanhe sua sequência
+                de dias estudando programação.
+              </p>
+
+              <a href="#cta">
+                Saiba mais
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <article class="benefit-card">
+              <div class="benefit-icon">📚</div>
+
+              <h3>Trilhas de aprendizado</h3>
+
+              <p>
+                Organize tecnologias, cursos e projetos em uma ordem
+                que faça sentido para sua evolução.
+              </p>
+
+              <a href="#cta">
+                Saiba mais
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <article class="benefit-card">
+              <div class="benefit-icon">💻</div>
+
+              <h3>Projetos práticos</h3>
+
+              <p>
+                Registre seus projetos, acompanhe cada etapa e
+                construa um portfólio cada vez mais completo.
+              </p>
+
+              <a href="#cta">
+                Saiba mais
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <article class="benefit-card">
+              <div class="benefit-icon">🔔</div>
+
+              <h3>Lembretes inteligentes</h3>
+
+              <p>
+                Não perca suas metas e receba lembretes para continuar
+                sua rotina de aprendizado.
+              </p>
+
+              <a href="#cta">
+                Saiba mais
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics Section -->
+      <section class="statistics">
+        <div class="container statistics-grid">
+          <article>
+            <strong>2.500+</strong>
+            <span>Estudantes ativos</span>
+          </article>
+
+          <article>
+            <strong>15.000+</strong>
+            <span>Tarefas concluídas</span>
+          </article>
+
+          <article>
+            <strong>8.000+</strong>
+            <span>Metas alcançadas</span>
+          </article>
+
+          <article>
+            <strong>4.9/5</strong>
+            <span>Avaliação média</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section section" id="cta">
+        <div class="container">
+          <div class="cta-card">
+            <div class="cta-decoration cta-decoration-one"></div>
+            <div class="cta-decoration cta-decoration-two"></div>
+
+            <div class="cta-content">
+              <span class="section-tag light-tag">
+                Comece hoje
+              </span>
+
+              <h2>
+                Pronto para transformar sua rotina de estudos?
+              </h2>
+
+              <p>
+                Crie sua conta gratuitamente e comece a organizar sua
+                evolução como desenvolvedor.
+              </p>
+
+              <a href="#" class="button button-light">
+                Criar minha conta
+                <span aria-hidden="true">→</span>
+              </a>
+
+              <small>
+                Não precisa de cartão de crédito.
+              </small>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo footer-logo">
+            <span class="logo-icon">&lt;/&gt;</span>
+            <span>DevFlow</span>
+          </a>
+
+          <p>
+            Organize seus estudos, acompanhe seu progresso e continue
+            evoluindo todos os dias.
+          </p>
+
+          <div class="social-links">
+            <a href="#" aria-label="GitHub">GH</a>
+            <a href="#" aria-label="LinkedIn">IN</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h2>Plataforma</h2>
+
+          <a href="#about">Sobre</a>
+          <a href="#benefits">Benefícios</a>
+          <a href="#cta">Começar agora</a>
+        </div>
+
+        <div class="footer-column">
+          <h2>Suporte</h2>
+
+          <a href="#">Central de ajuda</a>
+          <a href="#">Contato</a>
+          <a href="#">Perguntas frequentes</a>
+        </div>
+
+        <div class="footer-column">
+          <h2>Legal</h2>
+
+          <a href="#">Termos de uso</a>
+          <a href="#">Privacidade</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>
+          &copy; <span id="current-year"></span> DevFlow. Todos os
+          direitos reservados.
+        </p>
+
+        <p>Desenvolvido com HTML, CSS e JavaScript.</p>
+      </div>
+    </footer>
+  </body>
+</html>

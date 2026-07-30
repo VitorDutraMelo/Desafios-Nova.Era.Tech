@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Clone responsivo de um perfil do Instagram desenvolvido com HTML e CSS."
+  >
+
+  <title>Instagram Profile Clone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="top-header">
+    <div class="header-container">
+      <a href="#" class="instagram-logo" aria-label="Página inicial">
+        Instagram
+      </a>
+
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+          type="search"
+          placeholder="Pesquisar"
+          aria-label="Pesquisar"
+        >
+      </div>
+
+      <nav class="main-navigation" aria-label="Navegação principal">
+        <a href="#" aria-label="Página inicial">
+          <i class="fa-solid fa-house"></i>
+        </a>
+
+        <a href="#" aria-label="Mensagens">
+          <i class="fa-regular fa-paper-plane"></i>
+        </a>
+
+        <a href="#" aria-label="Criar publicação">
+          <i class="fa-regular fa-square-plus"></i>
+        </a>
+
+        <a href="#" aria-label="Explorar">
+          <i class="fa-regular fa-compass"></i>
+        </a>
+
+        <a href="#" aria-label="Notificações">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+
+        <a href="#" class="navigation-profile" aria-label="Perfil">
+          <img
+            src="https://picsum.photos/seed/vitor-profile/100/100"
+            alt="Foto pequena do perfil"
+          >
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="profile-page">
+    <section class="profile-header">
+      <div class="profile-photo-container">
+        <div class="profile-photo-border">
+          <img
+            class="profile-photo"
+            src="https://picsum.photos/seed/vitor-profile/400/400"
+            alt="Foto de perfil de Vitor Melo"
+          >
+        </div>
+      </div>
+
+      <div class="profile-information">
+        <div class="profile-actions">
+          <h1 class="username">vitordutramelo</h1>
+
+          <button class="primary-button" type="button">
+            Seguir
+          </button>
+
+          <button
+            class="secondary-button"
+            type="button"
+            aria-label="Mostrar sugestões de perfis"
+          >
+            <i class="fa-solid fa-user-plus"></i>
+          </button>
+
+          <button
+            class="more-button"
+            type="button"
+            aria-label="Mais opções"
+          >
+            <i class="fa-solid fa-ellipsis"></i>
+          </button>
+        </div>
+
+        <div class="profile-statistics">
+          <p>
+            <strong>9</strong>
+            publicações
+          </p>
+
+          <button type="button">
+            <strong>1.250</strong>
+            seguidores
+          </button>
+
+          <button type="button">
+            seguindo
+            <strong>385</strong>
+          </button>
+        </div>
+
+        <div class="profile-biography">
+          <h2>Vitor Dutra Melo</h2>
+
+          <span class="profile-category">
+            Desenvolvedor de software
+          </span>
+
+          <p>
+            👨‍💻 Backend Developer em evolução
+          </p>
+
+          <p>
+            🇧🇷 Brasileiro vivendo em Londres 🇬🇧
+          </p>
+
+          <p>
+            🚀 Construindo projetos e compartilhando minha jornada
+          </p>
+
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-solid fa-link"></i>
+            github.com/vitordutramelo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mobile-profile-information">
+      <div class="mobile-biography">
+        <h2>Vitor Dutra Melo</h2>
+
+        <span>Desenvolvedor de software</span>
+
+        <p>👨‍💻 Backend Developer em evolução</p>
+        <p>🇧🇷 Brasileiro vivendo em Londres 🇬🇧</p>
+        <p>🚀 Construindo projetos e compartilhando minha jornada</p>
+
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-solid fa-link"></i>
+          github.com/vitordutramelo
+        </a>
+      </div>
+
+      <div class="mobile-actions">
+        <button class="primary-button" type="button">
+          Seguir
+        </button>
+
+        <button class="edit-button" type="button">
+          Mensagem
+        </button>
+
+        <button
+          class="secondary-button"
+          type="button"
+          aria-label="Mostrar sugestões"
+        >
+          <i class="fa-solid fa-user-plus"></i>
+        </button>
+      </div>
+
+      <div class="mobile-statistics">
+        <div>
+          <strong>9</strong>
+          <span>publicações</span>
+        </div>
+
+        <div>
+          <strong>1.250</strong>
+          <span>seguidores</span>
+        </div>
+
+        <div>
+          <strong>385</strong>
+          <span>seguindo</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights" aria-label="Destaques">
+      <article class="highlight">
+        <button type="button">
+          <span class="highlight-image">
+            <i class="fa-solid fa-code"></i>
+          </span>
+
+          <span class="highlight-title">Projetos</span>
+        </button>
+      </article>
+
+      <article class="highlight">
+        <button type="button">
+          <span class="highlight-image">
+            <i class="fa-solid fa-laptop-code"></i>
+          </span>
+
+          <span class="highlight-title">Código</span>
+        </button>
+      </article>
+
+      <article class="highlight">
+        <button type="button">
+          <span class="highlight-image">
+            <i class="fa-solid fa-plane"></i>
+          </span>
+
+          <span class="highlight-title">Londres</span>
+        </button>
+      </article>
+
+      <article class="highlight">
+        <button type="button">
+          <span class="highlight-image">
+            <i class="fa-solid fa-dumbbell"></i>
+          </span>
+
+          <span class="highlight-title">Rotina</span>
+        </button>
+      </article>
+
+      <article class="highlight">
+        <button type="button">
+          <span class="highlight-image new-highlight">
+            <i class="fa-solid fa-plus"></i>
+          </span>
+
+          <span class="highlight-title">Novo</span>
+        </button>
+      </article>
+    </section>
+
+    <section class="profile-content">
+      <nav class="content-navigation" aria-label="Conteúdo do perfil">
+        <button class="content-tab active-tab" type="button">
+          <i class="fa-solid fa-table-cells"></i>
+          <span>PUBLICAÇÕES</span>
+        </button>
+
+        <button class="content-tab" type="button">
+          <i class="fa-regular fa-bookmark"></i>
+          <span>SALVOS</span>
+        </button>
+
+        <button class="content-tab" type="button">
+          <i class="fa-solid fa-user-tag"></i>
+          <span>MARCADOS</span>
+        </button>
+      </nav>
+
+      <div class="posts-grid">
+        <article class="post">
+          <img
+            src="https://picsum.photos/seed/programming-01/700/700"
+            alt="Notebook utilizado para programação"
+            loading="lazy"
+          >
+
+          <div class="post-overlay">
+            <span>
+              <i class="fa-solid fa-heart"></i>
+              248
+            </span>
+
+            <span>
+              <i class="fa-solid fa-comment"></i>
+              18
+            </span>
+          </div>
+        </article>
+
+        <article class="post">
+          <img
+            src="https://picsum.photos/seed/london-02/700/700"
+            alt="Paisagem urbana de Londres"
+            loading="lazy"
+          >
+
+          <div class="post-overlay">
+            <span>
+              <i class="fa-solid fa-heart"></i>
+              312
+            </span>
+
+            <span>
+              <i class="fa-solid fa-comment"></i>
+              24
+            </span>
+          </div>
+        </article>
+
+        <article class="post">
+          <img
+            src="https://picsum.photos/seed/technology-03/700/700"
+            alt="Equipamentos de tecnologia"
+            loading="lazy"
+          >
+
+          <div class="post-overlay">
+            <span>
+              <i class="fa-solid fa-heart"></i>
+              195
+            </span>
+
+            <span>
+              <i class="fa-solid fa-comment"></i>
+              12
+            </span>
+          </div>
+        </article>
+
+        <article class="post">
+          <img
+            src="https://picsum.photos/seed/city-04/700/700"
+            alt="Prédios de uma cidade"
+            loading="lazy"
+          >
+
+          <div class="post-overlay">
+            <span>
+              <i class="fa-solid fa-heart"></i>
+              420
+            </span>
+
+            <span>
+              <i class="fa-solid fa-comment"></i>
+              31
+            </span>
+          </div>
+        </article>
+
+        <article class="post">
+          <img
+            src="https://picsum.photos/seed/workspace-05/700/700"
+            alt="Espaço de trabalho moderno"
+            loading="lazy"
+          >
+
+          <div class="post-overlay">
+            <span>
+              <i class="fa-solid fa-heart"></i>
+              287
+            </span>
+
+            <span>
+              <i class="fa-solid fa-comment"></i>
+              19
+            </span>
+          </div>
+        </article>
+
+        <article class="post">
+          <img
+            src="https://picsum.photos/seed/street-06/700/700"
+            alt="Rua com arquitetura moderna"
+            loading="lazy"
+          >
+
+          <div class="post-overlay">
+            <span>
+              <i class="fa-solid fa-heart"></i>
+              356
+            </span>
+
+            <span>
+              <i class="fa-solid fa-comment"></i>
+              27
+            </span>
+          </div>
+        </article>
+
+        <article class="post">
+          <img
+            src="https://picsum.photos/seed/computer-07/700/700"
+            alt="Computador com código na tela"
+            loading="lazy"
+          >
+
+          <div class="post-overlay">
+            <span>
+              <i class="fa-solid fa-heart"></i>
+              510
+            </span>
+
+            <span>
+              <i class="fa-solid fa-comment"></i>
+              42
+            </span>
+          </div>
+        </article>
+
+        <article class="post">
+          <img
+            src="https://picsum.photos/seed/travel-08/700/700"
+            alt="Registro de viagem"
+            loading="lazy"
+          >
+
+          <div class="post-overlay">
+            <span>
+              <i class="fa-solid fa-heart"></i>
+              275
+            </span>
+
+            <span>
+              <i class="fa-solid fa-comment"></i>
+              16
+            </span>
+          </div>
+        </article>
+
+        <article class="post">
+          <img
+            src="https://picsum.photos/seed/developer-09/700/700"
+            alt="Mesa de um desenvolvedor"
+            loading="lazy"
+          >
+
+          <div class="post-overlay">
+            <span>
+              <i class="fa-solid fa-heart"></i>
+              398
+            </span>
+
+            <span>
+              <i class="fa-solid fa-comment"></i>
+              35
+            </span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <nav aria-label="Links do rodapé">
+      <a href="#">Meta</a>
+      <a href="#">Sobre</a>
+      <a href="#">Blog</a>
+      <a href="#">Carreiras</a>
+      <a href="#">Ajuda</a>
+      <a href="#">API</a>
+      <a href="#">Privacidade</a>
+      <a href="#">Termos</a>
+      <a href="#">Localizações</a>
+      <a href="#">Instagram Lite</a>
+    </nav>
+
+    <div class="footer-bottom">
+      <span>Português (Brasil)</span>
+      <span>© 2026 Instagram Clone</span>
+    </div>
+  </footer>
+
+  <nav class="mobile-navigation" aria-label="Navegação para celular">
+    <a href="#" aria-label="Página inicial">
+      <i class="fa-solid fa-house"></i>
+    </a>
+
+    <a href="#" aria-label="Pesquisar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </a>
+
+    <a href="#" aria-label="Criar publicação">
+      <i class="fa-regular fa-square-plus"></i>
+    </a>
+
+    <a href="#" aria-label="Vídeos">
+      <i class="fa-solid fa-clapperboard"></i>
+    </a>
+
+    <a href="#" aria-label="Perfil">
+      <img
+        src="https://picsum.photos/seed/vitor-profile/100/100"
+        alt="Foto do perfil"
+      >
+    </a>
+  </nav>
+</body>
+</html>

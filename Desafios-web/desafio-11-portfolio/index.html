@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de Vitor Dutra, Backend Developer.">
+  <title>Vitor Dutra | Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header" id="inicio">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="logo" href="#inicio" aria-label="Ir para o início">VD<span>.</span></a>
+      <button class="menu-button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="#inicio">Home</a><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a>
+        <button class="theme-button" aria-label="Alternar tema"><span class="theme-icon">☀</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> DISPONÍVEL PARA NOVOS PROJETOS</p>
+        <h1 id="hero-title">Olá, eu sou<br><strong>Vitor Dutra.</strong></h1>
+        <p class="role">Backend Developer</p>
+        <p class="intro">Desenvolvo APIs, sistemas e aplicações com foco em organização, segurança e boas experiências. Transformo ideias em soluções funcionais e escaláveis.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projetos">Ver projetos <span>→</span></a>
+          <a class="button secondary" href="#contato">Entrar em contato</a>
+        </div>
+        <div class="socials" aria-label="Redes sociais">
+          <a href="https://github.com/VitorDutraMelo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+          <a href="#contato" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="code-badge">&lt;/&gt;</div>
+        <div class="photo-frame"><img src="images/vitor-dutra.jpeg" alt="Foto profissional de Vitor Dutra"></div>
+        <div class="tech-card"><span class="pulse"></span><div><small>FOCO ATUAL</small><strong>Node.js & APIs REST</strong></div></div>
+        <span class="decoration dots"></span><span class="decoration ring"></span>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Resumo profissional">
+      <div class="container stats-grid">
+        <div><strong>05+</strong><span>Projetos desenvolvidos</span></div>
+        <div><strong>100%</strong><span>Comprometimento</span></div>
+        <div><strong>∞</strong><span>Vontade de aprender</span></div>
+      </div>
+    </section>
+
+    <section class="section about container" id="sobre">
+      <div class="section-heading reveal"><p>01. SOBRE MIM</p><h2>Construindo a base de<br><span>boas experiências.</span></h2></div>
+      <div class="about-grid reveal">
+        <div class="about-copy">
+          <p>Sou desenvolvedor backend em evolução, apaixonado por resolver problemas e criar aplicações que realmente funcionam.</p>
+          <p>Busco escrever código limpo, organizado e fácil de manter, enquanto amplio meus conhecimentos em arquitetura, bancos de dados e desenvolvimento de APIs.</p>
+        </div>
+        <div class="skills">
+          <h3>Tecnologias e ferramentas</h3>
+          <div class="skill-list"><span>Node.js</span><span>JavaScript</span><span>TypeScript</span><span>Express</span><span>PostgreSQL</span><span>Prisma</span><span>Git</span><span>GitHub</span><span>HTML5</span><span>CSS3</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projetos">
+      <div class="container">
+        <div class="section-heading reveal"><p>02. PROJETOS</p><h2>Soluções que saíram<br><span>do papel.</span></h2></div>
+        <div class="project-grid">
+          <article class="project-card featured reveal"><div class="project-number">01</div><div class="project-icon">PF</div><div><p class="project-type">APLICAÇÃO FINANCEIRA</p><h3>Porquin Finance</h3><p>Aplicação de controle financeiro pessoal, offline e instalável, com dashboard, transações, metas e relatórios.</p><div class="tags"><span>TypeScript</span><span>PWA</span><span>Local Storage</span></div></div></article>
+          <article class="project-card reveal"><div class="project-number">02</div><div class="project-icon">BT</div><div><p class="project-type">API & DOCUMENTAÇÃO</p><h3>BabyTracker</h3><p>Sistema colaborativo para acompanhamento da rotina de bebês, com API documentada e organização técnica.</p><div class="tags"><span>Node.js</span><span>Swagger</span><span>REST API</span></div></div></article>
+          <article class="project-card reveal"><div class="project-number">03</div><div class="project-icon">RD</div><div><p class="project-type">E-COMMERCE</p><h3>Rare Drop</h3><p>Vitrine moderna de produtos com catálogo, gerenciamento de estoque, drops, leads e backend próprio.</p><div class="tags"><span>Express</span><span>Prisma</span><span>PostgreSQL</span></div></div></article>
+          <article class="project-card reveal"><div class="project-number">04</div><div class="project-icon">MGD</div><div><p class="project-type">FITNESS PWA</p><h3>My Gym Day</h3><p>Aplicativo offline para registrar treinos, nutrição, água, hábitos e acompanhar a evolução pessoal.</p><div class="tags"><span>TypeScript</span><span>PWA</span><span>IndexedDB</span></div></div></article>
+          <article class="project-card reveal"><div class="project-number">05</div><div class="project-icon">FC</div><div><p class="project-type">ORGANIZAÇÃO DOMÉSTICA</p><h3>FridgeChef</h3><p>Aplicação para organizar alimentos e facilitar o planejamento de receitas a partir do que existe na geladeira.</p><div class="tags"><span>JavaScript</span><span>Node.js</span><span>API</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact container" id="contato">
+      <div class="contact-box reveal">
+        <p class="eyebrow"><span></span> VAMOS CONVERSAR</p>
+        <h2>Tem uma ideia ou oportunidade?</h2><p>Estou sempre aberto a novos desafios, colaborações e conversas sobre tecnologia.</p>
+        <div class="contact-links">
+          <a href="https://github.com/VitorDutraMelo" target="_blank" rel="noopener noreferrer"><small>GITHUB</small><strong>github.com/VitorDutraMelo</strong></a>
+          <a href="#" class="pending-link"><small>LINKEDIN</small><strong>Adicione seu link aqui</strong></a>
+          <a href="#" class="pending-link"><small>E-MAIL</small><strong>Adicione seu e-mail aqui</strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container"><p>© <span id="year"></span> Vitor Dutra. Feito com HTML, CSS e JavaScript.</p><a href="#inicio">Voltar ao topo ↑</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tela de login moderna desenvolvida com HTML e CSS.">
+  <title>Welcome Back | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="login-page">
+    <section class="brand-panel" aria-label="Apresentação da plataforma">
+      <a class="brand" href="#" aria-label="Nexora - Página inicial">
+        <span class="brand__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path d="M5 17.5 12 4l7 13.5-7-3.5-7 3.5Z"/>
+            <path d="m8.2 18.7 3.8-2 3.8 2L12 21l-3.8-2.3Z"/>
+          </svg>
+        </span>
+        <span>Nexora</span>
+      </a>
+
+      <div class="brand-panel__content">
+        <span class="eyebrow">SUA PRÓXIMA CONQUISTA COMEÇA AQUI</span>
+        <h1>Transforme ideias em experiências incríveis.</h1>
+        <p>Acesse sua conta e continue construindo projetos que fazem a diferença.</p>
+
+        <div class="testimonial">
+          <div class="testimonial__avatars" aria-hidden="true">
+            <span>AM</span><span>JS</span><span>LC</span>
+          </div>
+          <p><strong>+2.500 pessoas</strong> já fazem parte desta jornada.</p>
+        </div>
+      </div>
+
+      <p class="brand-panel__footer">© 2026 Nexora. Todos os direitos reservados.</p>
+    </section>
+
+    <section class="form-panel">
+      <div class="mobile-brand">
+        <span class="brand__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M5 17.5 12 4l7 13.5-7-3.5-7 3.5Z"/><path d="m8.2 18.7 3.8-2 3.8 2L12 21l-3.8-2.3Z"/></svg>
+        </span>
+        <span>Nexora</span>
+      </div>
+
+      <div class="login-card">
+        <div class="login-card__heading">
+          <span class="welcome-icon" aria-hidden="true">✦</span>
+          <h2>Bem-vindo de volta!</h2>
+          <p>Entre com seus dados para acessar sua conta.</p>
+        </div>
+
+        <form id="login-form" novalidate>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <div class="input-wrapper">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required>
+            </div>
+            <span class="field-error" id="email-error" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <div class="label-row">
+              <label for="password">Senha</label>
+              <a href="#">Esqueci minha senha</a>
+            </div>
+            <div class="input-wrapper">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <input type="password" id="password" name="password" placeholder="Digite sua senha" autocomplete="current-password" minlength="6" required>
+              <button class="password-toggle" type="button" aria-label="Mostrar senha" aria-pressed="false">
+                <svg class="eye-open" aria-hidden="true" viewBox="0 0 24 24"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.5"/></svg>
+                <svg class="eye-closed" aria-hidden="true" viewBox="0 0 24 24"><path d="m3 3 18 18M10.6 6.2A9.9 9.9 0 0 1 12 6c6 0 9.5 6 9.5 6a16 16 0 0 1-2 2.6M6.3 6.3C3.8 8.1 2.5 12 2.5 12s3.5 6 9.5 6a9 9 0 0 0 3-.5"/></svg>
+              </button>
+            </div>
+            <span class="field-error" id="password-error" aria-live="polite"></span>
+          </div>
+
+          <label class="remember">
+            <input type="checkbox" name="remember">
+            <span>Lembrar de mim</span>
+          </label>
+
+          <button class="submit-button" type="submit">
+            <span>Entrar</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+          </button>
+
+          <p class="form-message" id="form-message" aria-live="polite"></p>
+        </form>
+
+        <p class="signup">Ainda não tem uma conta? <a href="#">Criar conta</a></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

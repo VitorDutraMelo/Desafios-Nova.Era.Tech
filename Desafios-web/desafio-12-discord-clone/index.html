@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clone educacional da página inicial do Discord, desenvolvido com HTML, CSS e JavaScript puro.">
+  <title>Discord Clone | Imagine um lugar...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Discord Clone - início">
+        <span class="brand__icon" aria-hidden="true">◖◗</span>
+        <span>Discord</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="main-menu">
+        <a href="#recursos">Recursos</a>
+        <a href="#comunidade">Comunidade</a>
+        <a href="#seguranca">Segurança</a>
+        <a href="#download">Download</a>
+      </div>
+
+      <a class="button button--small button--light desktop-login" href="#download">Entrar</a>
+    </nav>
+
+    <div class="hero__content container">
+      <p class="eyebrow">Seu espaço. Sua turma.</p>
+      <h1>Imagine um lugar...</h1>
+      <p class="hero__description">...onde você pode pertencer a um clube escolar, um grupo de jogos ou simplesmente conversar com seus melhores amigos. Um lugar que torna fácil falar todos os dias e se divertir com mais frequência.</p>
+      <div class="hero__actions">
+        <a class="button button--light" href="#download"><span aria-hidden="true">↓</span> Baixar para Windows</a>
+        <a class="button button--dark" href="#recursos">Abrir o Discord no navegador</a>
+      </div>
+    </div>
+
+    <div class="hero__scene" aria-hidden="true">
+      <img class="hero__clouds" src="assets/clouds.svg" alt="">
+      <img class="hero__character hero__character--left" src="assets/character-left.svg" alt="">
+      <img class="hero__character hero__character--right" src="assets/character-right.svg" alt="">
+    </div>
+  </header>
+
+  <main>
+    <section class="feature section" id="recursos">
+      <div class="container feature__grid">
+        <img class="feature__image" src="assets/servers.svg" alt="Ilustração de uma comunidade conversando em canais">
+        <div class="feature__content">
+          <p class="eyebrow eyebrow--blue">Organize sua comunidade</p>
+          <h2>Crie um espaço só para convidados</h2>
+          <p>Os servidores são organizados em canais por assunto, nos quais você pode colaborar, compartilhar e conversar sem ocupar um chat de grupo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature section section--soft" id="comunidade">
+      <div class="container feature__grid feature__grid--reverse">
+        <img class="feature__image" src="assets/voice.svg" alt="Ilustração de amigos em uma chamada de voz">
+        <div class="feature__content">
+          <p class="eyebrow eyebrow--blue">Sempre por perto</p>
+          <h2>Aqui é fácil se encontrar</h2>
+          <p>Entre em um canal de voz quando estiver livre. Seus amigos podem ver que você está online e entrar para conversar sem precisar ligar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature section" id="seguranca">
+      <div class="container feature__grid">
+        <img class="feature__image" src="assets/moderation.svg" alt="Ilustração de ferramentas de moderação e segurança">
+        <div class="feature__content">
+          <p class="eyebrow eyebrow--blue">Do pequeno ao gigante</p>
+          <h2>Para poucos ou para uma comunidade inteira</h2>
+          <p>Ferramentas de moderação e níveis de acesso personalizados dão aos membros diferentes poderes e mantêm a conversa organizada.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase section section--soft" id="download">
+      <div class="container showcase__content">
+        <p class="eyebrow eyebrow--blue">Vídeo, voz e texto</p>
+        <h2>Tecnologia confiável para ficar perto</h2>
+        <p>Voz e vídeo de baixa latência fazem você sentir que está na mesma sala. Dê um oi, assista a amigos transmitirem jogos ou desenhem juntos.</p>
+        <img src="assets/video-call.svg" alt="Interface ilustrada de uma chamada de vídeo entre amigos">
+
+        <div class="download-card">
+          <span class="download-card__sparkles" aria-hidden="true">✦　✦　✧</span>
+          <h3>Pronto para começar sua jornada?</h3>
+          <a class="button button--primary" href="#inicio"><span aria-hidden="true">↓</span> Baixar para Windows</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__intro">
+        <a class="brand" href="#inicio"><span class="brand__icon" aria-hidden="true">◖◗</span><span>Discord</span></a>
+        <p>Seu lugar para conversar, jogar e criar memórias.</p>
+        <div class="socials" aria-label="Redes sociais">
+          <a href="#" aria-label="X">𝕏</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer__column"><h3>Produto</h3><a href="#download">Baixar</a><a href="#recursos">Recursos</a><a href="#">Nitro</a><a href="#">Status</a></div>
+      <div class="footer__column"><h3>Empresa</h3><a href="#">Sobre</a><a href="#">Empregos</a><a href="#">Marca</a><a href="#">Notícias</a></div>
+      <div class="footer__column"><h3>Recursos</h3><a href="#">Suporte</a><a href="#seguranca">Segurança</a><a href="#">Blog</a><a href="#">Feedback</a></div>
+      <div class="footer__column"><h3>Políticas</h3><a href="#">Termos</a><a href="#">Privacidade</a><a href="#">Diretrizes</a><a href="#">Licenças</a></div>
+    </div>
+    <div class="container footer__bottom">
+      <span>Projeto educacional — Desafio 12</span>
+      <a class="button button--small button--primary" href="#inicio">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AstroVerse: uma experiência visual sobre exploração espacial.">
+  <title>AstroVerse | Explore o desconhecido</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="inicio">
+    <div class="container navbar">
+      <a class="logo" href="#inicio" aria-label="AstroVerse - início">
+        <span class="logo__mark" aria-hidden="true">✦</span>
+        Astro<span>Verse</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="main-menu" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#missoes">Missões</a>
+        <a href="#descobertas">Descobertas</a>
+        <a href="#jornada">Jornada</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Alternar tema" title="Alternar tema">
+        <span class="theme-toggle__icon" aria-hidden="true">☀</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__glow hero__glow--one"></div>
+      <div class="hero__glow hero__glow--two"></div>
+      <div class="container hero__content">
+        <div class="hero__text reveal">
+          <span class="eyebrow"><i></i> A próxima fronteira começa aqui</span>
+          <h1 id="hero-title">O universo está esperando por <em>você.</em></h1>
+          <p>Descubra mundos distantes, acompanhe missões históricas e conheça as tecnologias que estão construindo o futuro da humanidade.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#missoes">Iniciar exploração <span>↗</span></a>
+            <a class="btn btn--ghost" href="#descobertas"><span class="play">▶</span> Ver descobertas</a>
+          </div>
+          <div class="hero__numbers" aria-label="Números da exploração espacial">
+            <div><strong>5.000+</strong><span>Exoplanetas</span></div>
+            <div><strong>72</strong><span>Missões ativas</span></div>
+            <div><strong>∞</strong><span>Possibilidades</span></div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="orbit orbit--outer"><span class="moon moon--one"></span></div>
+          <div class="orbit orbit--inner"><span class="moon moon--two"></span></div>
+          <div class="planet">
+            <div class="planet__shine"></div>
+            <div class="planet__ring"></div>
+          </div>
+          <div class="float-card float-card--top"><span>◉</span><div><small>Destino atual</small><strong>Kepler-186f</strong></div></div>
+          <div class="float-card float-card--bottom"><span>⌁</span><div><small>Distância</small><strong>500 anos-luz</strong></div></div>
+          <span class="star star--1">✦</span><span class="star star--2">✧</span><span class="star star--3">✦</span>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#missoes" aria-label="Rolar para missões"><span></span> Explore</a>
+    </section>
+
+    <section class="section missions" id="missoes">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="eyebrow"><i></i> Missões em destaque</span><h2>Além dos limites<br>do nosso mundo.</h2></div>
+          <p>Cada missão nos aproxima de respostas para as maiores perguntas da humanidade.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="mission-card mission-card--mars reveal">
+            <div class="mission-card__art"><span class="mission-card__number">01</span><div class="mini-planet mini-planet--mars"></div><span class="status">● EM ANDAMENTO</span></div>
+            <div class="mission-card__body"><span>MARTE • 2028</span><h3>Projeto Ares</h3><p>A primeira base humana autossustentável no planeta vermelho.</p><a href="#jornada" aria-label="Conhecer o Projeto Ares">Conhecer missão <b>→</b></a></div>
+          </article>
+          <article class="mission-card mission-card--europa reveal">
+            <div class="mission-card__art"><span class="mission-card__number">02</span><div class="mini-planet mini-planet--europa"></div><span class="status">● PREPARAÇÃO</span></div>
+            <div class="mission-card__body"><span>JÚPITER • 2030</span><h3>Europa Clipper</h3><p>Uma jornada até o oceano escondido sob a lua gelada de Júpiter.</p><a href="#jornada" aria-label="Conhecer Europa Clipper">Conhecer missão <b>→</b></a></div>
+          </article>
+          <article class="mission-card mission-card--titan reveal">
+            <div class="mission-card__art"><span class="mission-card__number">03</span><div class="mini-planet mini-planet--titan"></div><span class="status">● PLANEJAMENTO</span></div>
+            <div class="mission-card__body"><span>SATURNO • 2034</span><h3>Dragonfly</h3><p>Um laboratório voador explorando os mistérios orgânicos de Titã.</p><a href="#jornada" aria-label="Conhecer Dragonfly">Conhecer missão <b>→</b></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section discovery" id="descobertas">
+      <div class="container discovery__grid">
+        <div class="discovery__visual reveal" aria-hidden="true">
+          <div class="portal"><div class="portal__core"></div></div>
+          <span class="coordinate">47° 09′ 02″ N<br>11° 23′ 18″ E</span>
+        </div>
+        <div class="discovery__content reveal">
+          <span class="eyebrow"><i></i> Uma nova perspectiva</span>
+          <h2>Somos feitos da mesma matéria que as estrelas.</h2>
+          <p>Explorar o espaço é também entender nossa própria origem. Cada descoberta reescreve o que sabemos sobre a vida, o tempo e o nosso lugar no cosmos.</p>
+          <ul>
+            <li><span>✦</span><div><strong>Ciência sem fronteiras</strong><small>Conhecimento compartilhado transforma o impossível.</small></div></li>
+            <li><span>⌁</span><div><strong>Tecnologia para o futuro</strong><small>Inovações espaciais que melhoram a vida na Terra.</small></div></li>
+            <li><span>◎</span><div><strong>Um planeta para proteger</strong><small>Ver a Terra de longe muda tudo que vemos de perto.</small></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey" id="jornada">
+      <div class="container journey__box reveal">
+        <span class="eyebrow"><i></i> O futuro está em movimento</span>
+        <h2>Pronto para fazer parte<br>da próxima descoberta?</h2>
+        <p>Receba novidades sobre missões, descobertas e eventos astronômicos.</p>
+        <form class="newsletter">
+          <label class="sr-only" for="email">Seu melhor e-mail</label>
+          <input id="email" type="email" placeholder="Seu melhor e-mail" required>
+          <button class="btn btn--primary" type="submit">Entrar na jornada <span>↗</span></button>
+        </form>
+        <small class="form-message" role="status"></small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <a class="logo" href="#inicio"><span class="logo__mark">✦</span> Astro<span>Verse</span></a>
+      <p>Explorando hoje. Inspirando o amanhã.</p>
+      <div class="socials"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="X">𝕏</a></div>
+    </div>
+    <div class="container footer__bottom"><span>© 2026 AstroVerse. Projeto educacional.</span><a href="#inicio">Voltar ao topo ↑</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

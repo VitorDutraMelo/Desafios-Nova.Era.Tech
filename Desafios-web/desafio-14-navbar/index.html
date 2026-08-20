@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Navbar profissional, responsiva e acessível criada com HTML, CSS e JavaScript.">
+  <title>Desafio 14 | Navbar Profissional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Nexora - Página inicial">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M5 17.5 12 5l7 12.5h-4.2L12 12l-2.8 5.5H5Z"/></svg>
+        </span>
+        <span>Nexora</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-content" id="main-menu">
+        <ul class="nav-links">
+          <li><a class="nav-link active" href="#inicio" aria-current="page">Início</a></li>
+          <li class="dropdown">
+            <button class="nav-link dropdown-toggle" type="button" aria-expanded="false">
+              Soluções
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 7.5 5 5 5-5"/></svg>
+            </button>
+            <ul class="submenu">
+              <li><a href="#analytics"><span class="submenu-icon">↗</span><span><strong>Analytics</strong><small>Dados para decisões melhores</small></span></a></li>
+              <li><a href="#automacao"><span class="submenu-icon">✦</span><span><strong>Automação</strong><small>Fluxos de trabalho inteligentes</small></span></a></li>
+              <li><a href="#integracoes"><span class="submenu-icon">⌘</span><span><strong>Integrações</strong><small>Conecte suas ferramentas</small></span></a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="#recursos">Recursos</a></li>
+          <li><a class="nav-link" href="#precos">Preços</a></li>
+          <li><a class="nav-link" href="#sobre">Sobre</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a class="login-link" href="#entrar">Entrar</a>
+          <a class="button button-small" href="#comecar">Começar agora <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow"><span></span> PRODUTIVIDADE SEM LIMITES</span>
+        <h1>Transforme ideias em <em>resultados.</em></h1>
+        <p>Uma plataforma completa para equipes que querem trabalhar melhor, colaborar com clareza e crescer com confiança.</p>
+        <div class="hero-actions">
+          <a class="button" href="#comecar">Experimente grátis <span aria-hidden="true">→</span></a>
+          <a class="text-button" href="#demo"><span class="play" aria-hidden="true">▶</span> Ver demonstração</a>
+        </div>
+        <div class="social-proof">
+          <div class="avatars" aria-hidden="true"><span>AM</span><span>JR</span><span>LS</span><span>+</span></div>
+          <p><strong>4.9/5</strong><br>por mais de 2.000 equipes</p>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Painel de produtividade ilustrativo">
+        <div class="glow"></div>
+        <div class="dashboard-card">
+          <div class="card-top"><span></span><span></span><span></span><b>Visão geral</b><i>•••</i></div>
+          <div class="stats">
+            <div><small>PROJETOS ATIVOS</small><strong>24</strong><span>+12%</span></div>
+            <div><small>TAREFAS CONCLUÍDAS</small><strong>148</strong><span>+24%</span></div>
+          </div>
+          <div class="chart">
+            <div class="chart-head"><span>Desempenho</span><small>Últimos 7 dias⌄</small></div>
+            <svg viewBox="0 0 500 170" role="img" aria-label="Gráfico de desempenho crescente">
+              <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7c5cff" stop-opacity=".32"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></linearGradient></defs>
+              <path class="grid" d="M0 25h500M0 70h500M0 115h500M0 160h500"/>
+              <path class="area" d="M0 142C55 133 75 105 120 112s65-47 115-36 65 24 105-1 70-55 160-60v145H0Z"/>
+              <path class="line" d="M0 142C55 133 75 105 120 112s65-47 115-36 65 24 105-1 70-55 160-60"/>
+            </svg>
+          </div>
+        </div>
+        <div class="floating-card task-card"><span class="check">✓</span><div><small>TAREFA CONCLUÍDA</small><strong>Nova identidade visual</strong><p>Há 2 minutos</p></div></div>
+        <div class="floating-card people-card"><small>EQUIPE ONLINE</small><div class="avatars"><span>AM</span><span>JR</span><span>LS</span><span>+8</span></div></div>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="Empresas que confiam na Nexora">
+      <p>MAIS DE 2.000 EQUIPES JÁ TRABALHAM MELHOR</p>
+      <div><span>◈ vertex</span><span>◆ layers</span><span>● QUANTUM</span><span>▲ lumina</span><span>✣ orbit</span></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

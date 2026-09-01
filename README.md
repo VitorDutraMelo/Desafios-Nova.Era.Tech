@@ -381,7 +381,7 @@ Creating interactive forms using different input types and native browser valida
 * Validation
 * User Interaction
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Completed
 
 ---
 
@@ -397,7 +397,7 @@ Displaying structured product information using HTML tables.
 * Data Organization
 * HTML Structure
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -413,7 +413,7 @@ Building a complete news portal layout with multiple content sections.
 * Navigation
 * Content Layout
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -430,7 +430,7 @@ Creating a visually appealing product card using CSS styling techniques.
 * Typography
 * Colors
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -446,7 +446,7 @@ Building a modern responsive landing page.
 * Layouts
 * CSS Styling
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -462,7 +462,7 @@ Recreating the Instagram profile interface using HTML and CSS.
 * Flexbox
 * UI Replication
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -478,7 +478,7 @@ Creating a complete restaurant website with menu and presentation sections.
 * Layout Structure
 * CSS Components
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -494,7 +494,7 @@ Developing a professional login page with visual feedback and form validation.
 * CSS Pseudo-Classes
 * User Experience
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -510,7 +510,7 @@ Building a complete personal portfolio website.
 * Skills Section
 * Contact Form
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -526,7 +526,7 @@ Recreating Discord's interface and layout.
 * UI Replication
 * Flexbox
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -542,7 +542,7 @@ Creating a complete blog interface with sidebar and article pages.
 * Typography
 * Content Organization
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -558,7 +558,7 @@ Building a professional responsive navigation bar with dropdown menus.
 * Dropdown Menus
 * Responsive Design
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -574,7 +574,7 @@ Final frontend project showcasing all HTML and CSS concepts learned throughout t
 * UI Development
 * Frontend Best Practices
 
-**Status:** ⏳ Planned
+**Status:** ✅ Completed
 
 ---
 
@@ -584,19 +584,19 @@ Final frontend project showcasing all HTML and CSS concepts learned throughout t
 | ---------- | ---------- |
 | 01 - Personal Page | ✅ Completed |
 | 02 - Anime List | ✅ Completed |
-| 03 - Forms | 🚧 In Progress |
-| 04 - Product Table | ⏳ Planned |
-| 05 - News Portal | ⏳ Planned |
-| 06 - Product Card | ⏳ Planned |
-| 07 - Landing Page | ⏳ Planned |
-| 08 - Instagram Profile | ⏳ Planned |
-| 09 - Restaurant Website | ⏳ Planned |
-| 10 - Login Page | ⏳ Planned |
-| 11 - Portfolio | ⏳ Planned |
-| 12 - Discord Clone | ⏳ Planned |
-| 13 - Blog | ⏳ Planned |
-| 14 - Navbar | ⏳ Planned |
-| 15 - Themed Page | ⏳ Planned |
+| 03 - Forms | ✅ Completed |
+| 04 - Product Table | ✅ Completed |
+| 05 - News Portal | ✅ Completed |
+| 06 - Product Card | ✅ Completed |
+| 07 - Landing Page | ✅ Completed |
+| 08 - Instagram Profile | ✅ Completed |
+| 09 - Restaurant Website | ✅ Completed |
+| 10 - Login Page | ✅ Completed |
+| 11 - Portfolio | ✅ Completed |
+| 12 - Discord Clone | ✅ Completed |
+| 13 - Blog | ✅ Completed |
+| 14 - Navbar | ✅ Completed |
+| 15 - Themed Page | ✅ Completed |
 
 ---
 
